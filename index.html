@@ -1,2874 +1,1767 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Aaron Mendonca - Data Analyst and Data Science student specializing in Python, SQL, Power BI, Machine Learning and Data Visualization."
+        content="Aaron Mendonca | Data Science Student and Aspiring Data Analyst"
     >
 
     <meta
-        name="author"
-        content="Aaron Mendonca"
+        name="keywords"
+        content="Aaron Mendonca, Data Analyst, Data Science, Python, SQL, Power BI, Machine Learning"
     >
 
-    <title>
-        Aaron Mendonca | Data Analyst
-    </title>
+    <meta name="author" content="Aaron Mendonca">
+
+    <title>Aaron Mendonca | Data Analyst & Data Science</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
-        href="style.css"
     >
 
-</head>
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
 
+    <!-- =========================
+         BACKGROUND EFFECTS
+    ========================== -->
 
-<!-- =========================================================
-     SCROLL PROGRESS
-========================================================= -->
-
-<div
-    class="scroll-progress"
-    id="scrollProgress"
-></div>
-
-
-<!-- =========================================================
-     NAVIGATION
-========================================================= -->
-
-<header class="navbar">
-
-    <div class="nav-container">
-
-
-        <!-- BRAND -->
-
-        <a
-            href="#home"
-            class="brand"
-        >
-
-            <span class="brand-box">
-                A
-            </span>
-
-            <span class="brand-name">
-                Aaron Mendonca
-            </span>
-
-        </a>
-
-
-        <!-- NAVIGATION LINKS -->
-
-        <nav class="nav-links">
-
-            <a
-                href="#home"
-                class="nav-link active"
-            >
-                Home
-            </a>
-
-            <a
-                href="#about"
-                class="nav-link"
-            >
-                About
-            </a>
-
-            <a
-                href="#skills"
-                class="nav-link"
-            >
-                Skills
-            </a>
-
-            <a
-                href="#experience"
-                class="nav-link"
-            >
-                Experience
-            </a>
-
-            <a
-                href="#projects"
-                class="nav-link"
-            >
-                Projects
-            </a>
-
-            <a
-                href="#contact"
-                class="nav-link"
-            >
-                Contact
-            </a>
-
-        </nav>
-
-
-        <!-- RESUME -->
-
-        <a
-            href="assets/resume.pdf"
-            class="resume-btn"
-            target="_blank"
-            rel="noopener"
-        >
-
-            <span>↓</span>
-
-            Resume
-
-        </a>
-
-
-        <!-- MOBILE MENU -->
-
-        <button
-            class="mobile-menu"
-            id="mobileMenu"
-            type="button"
-            aria-label="Open navigation menu"
-        >
-            ☰
-        </button>
-
-
+    <div class="background-effects">
+        <span class="floating-shape shape-one"></span>
+        <span class="floating-shape shape-two"></span>
+        <span class="floating-shape shape-three"></span>
+        <span class="floating-dot dot-one"></span>
+        <span class="floating-dot dot-two"></span>
+        <span class="floating-dot dot-three"></span>
     </div>
 
-</header>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
+    <header class="navbar">
 
+        <div class="nav-container">
 
-<!-- =========================================================
-     HOME
-========================================================= -->
-
-<section
-    class="hero"
-    id="home"
->
-
-
-    <!-- DECORATIVE SHAPES -->
-
-    <div
-        class="hero-shape hero-square"
-    ></div>
-
-    <div
-        class="hero-shape hero-small-square"
-    ></div>
-
-    <div
-        class="hero-shape hero-circle"
-    ></div>
-
-
-    <!-- HOME CONTENT -->
-
-    <div class="home-content">
-
-
-        <!-- AVAILABILITY -->
-
-        <div class="availability">
-
-            <span class="availability-star">
-                ✦
-            </span>
-
-            <span>
-                Available for opportunities
-            </span>
-
-        </div>
-
-
-        <!-- MAIN HEADING -->
-
-        <h1 class="home-title">
-
-            Hi, I'm <span>Aaron</span>
-
-        </h1>
-
-
-        <!-- TYPING ROLE -->
-
-        <div class="home-role">
-
-            <span id="typingText">
-                ML Specialist
-            </span>
-
-            <span class="typing-cursor">
-                |
-            </span>
-
-        </div>
-
-
-        <!-- DESCRIPTION -->
-
-        <div class="home-description">
-
-            I enjoy solving problems with data, building models,
-            and turning insights into impact.
-
-        </div>
-
-
-        <!-- BUTTONS -->
-
-        <div class="home-buttons">
-
-
-            <a
-                href="#projects"
-                class="home-btn home-btn-primary"
-            >
-
-                <span class="btn-icon">
-                    ♧
-                </span>
-
-                <span>
-                    View My Work
-                </span>
-
-                <span class="btn-arrow">
-                    →
-                </span>
-
+            <a href="#home" class="brand">
+                <span class="brand-logo">A</span>
+                <span>Aaron Mendonca</span>
             </a>
 
+            <nav class="nav-menu">
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+            </nav>
 
             <a
-                href="#contact"
-                class="home-btn home-btn-outline"
+                href="assets/resume.pdf"
+                class="resume-button"
+                download
             >
-
-                <span class="btn-icon">
-                    ✉
-                </span>
-
-                <span>
-                    Get in Touch
-                </span>
-
+                <i class="fa-solid fa-download"></i>
+                <span>Resume</span>
             </a>
 
+            <button class="mobile-menu-button" aria-label="Open navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
         </div>
 
-
-        <!-- QUICK SKILLS -->
-
-        <div class="quick-skills">
+    </header>
 
 
-            <!-- PYTHON -->
+    <!-- =========================
+         MAIN
+    ========================== -->
 
-            <div class="quick-skill-card">
+    <main>
 
-                <div
-                    class="quick-skill-icon python-icon"
-                >
-                    🐍
+        <!-- =========================
+             HOME
+        ========================== -->
+
+        <section id="home" class="hero section">
+
+            <div class="hero-content">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    Available for opportunities
                 </div>
 
-                <h3>
-                    Python
-                </h3>
-
-                <p>
-                    Data Analysis
+                <p class="hero-small-text">
+                    DATA • ANALYTICS • MACHINE LEARNING
                 </p>
+
+                <h1>
+                    Hi, I'm
+                    <span class="gradient-text">Aaron</span>
+                </h1>
+
+                <div class="typing-wrapper">
+                    <span id="typing-text"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+
+                <p class="hero-description">
+                    I enjoy solving problems with data, building analytical
+                    solutions, and turning raw information into meaningful
+                    insights that support better decisions.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-button">
+                        <i class="fa-brands fa-github"></i>
+                        View My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="secondary-button">
+                        <i class="fa-regular fa-envelope"></i>
+                        Get in Touch
+                    </a>
+
+                </div>
+
+                <!-- Quick skill cards -->
+
+                <div class="hero-skills">
+
+                    <div class="hero-skill-card">
+                        <div class="skill-icon python-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Data Analysis</p>
+                    </div>
+
+                    <div class="hero-skill-card">
+                        <div class="skill-icon sql-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3>SQL</h3>
+                        <p>Data & Databases</p>
+                    </div>
+
+                    <div class="hero-skill-card">
+                        <div class="skill-icon ml-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Predictive Models</p>
+                    </div>
+
+                    <div class="hero-skill-card">
+                        <div class="skill-icon bi-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+                        <h3>Power BI</h3>
+                        <p>Visualization</p>
+                    </div>
+
+                </div>
 
             </div>
 
-
-            <!-- SQL -->
-
-            <div class="quick-skill-card">
-
-                <div
-                    class="quick-skill-icon sql-icon"
-                >
-                    🗃️
-                </div>
-
-                <h3>
-                    SQL
-                </h3>
-
-                <p>
-                    Database
-                </p>
-
-            </div>
+        </section>
 
 
-            <!-- MACHINE LEARNING -->
+        <!-- =========================
+             ABOUT
+        ========================== -->
 
-            <div class="quick-skill-card">
+        <section id="about" class="section">
 
-                <div
-                    class="quick-skill-icon ml-icon"
-                >
-                    🤖
-                </div>
+            <div class="section-heading">
 
-                <h3>
-                    ML
-                </h3>
+                <span class="section-badge">
+                    <i class="fa-regular fa-user"></i>
+                    ABOUT ME
+                </span>
 
-                <p>
-                    Algorithms
-                </p>
+                <h2>About Me</h2>
+
+                <div class="heading-line"></div>
 
             </div>
 
+            <div class="about-grid">
 
-            <!-- POWER BI -->
+                <div class="about-content">
 
-            <div class="quick-skill-card">
-
-                <div
-                    class="quick-skill-icon powerbi-icon"
-                >
-                    📊
-                </div>
-
-                <h3>
-                    PowerBI
-                </h3>
-
-                <p>
-                    Visualization
-                </p>
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     ABOUT
-========================================================= -->
-
-<section
-    class="section about-section"
-    id="about"
->
-
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            ABOUT ME
-        </div>
-
-        <h2>
-            About Me
-        </h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            Turning data into insights and insights into
-            meaningful decisions.
-        </p>
-
-    </div>
-
-
-
-    <div class="about-grid">
-
-
-        <!-- ABOUT TEXT -->
-
-        <div class="about-text">
-
-            <h3>
-                Introduction
-            </h3>
-
-            <p>
-                I'm an aspiring Data Analyst with hands-on
-                experience in data analysis, machine learning,
-                MIS reporting, and business intelligence.
-            </p>
-
-            <p>
-                I am currently pursuing my
-                <strong>BSc Data Science</strong>
-                at the
-                <strong>University of Mumbai</strong>
-                with a
-                <strong>9.5 CGPA</strong>.
-            </p>
-
-
-            <h3>
-                What I Do
-            </h3>
-
-            <p>
-                I work with SQL for data extraction, Python
-                for analysis and machine learning, and Power BI
-                for dashboards and business intelligence.
-            </p>
-
-            <p>
-                I enjoy discovering patterns in data,
-                building analytical solutions, and turning
-                data into actionable business insights.
-            </p>
-
-
-            <h3>
-                Outside Work
-            </h3>
-
-            <p>
-                When I'm not working with data, I enjoy
-                learning about emerging technologies,
-                exploring visualization techniques, and
-                continuously improving my analytical skills.
-            </p>
-
-        </div>
-
-
-
-        <!-- ABOUT CARDS -->
-
-        <div class="about-cards">
-
-
-            <div class="info-card">
-
-                <div class="card-icon">
-                    ▣
-                </div>
-
-                <div>
-
-                    <h4>
-                        Data Extraction & Analysis
-                    </h4>
+                    <h3>Introduction</h3>
 
                     <p>
-                        Working with SQL and Python to
-                        extract, clean, analyze and interpret
-                        structured datasets.
+                        I'm an aspiring Data Analyst and BSc Data Science
+                        student at the University of Mumbai, currently
+                        building hands-on experience across data analysis,
+                        machine learning, business intelligence, and CRM
+                        analytics.
+                    </p>
+
+                    <h3>What I Do</h3>
+
+                    <p>
+                        I work with Python, SQL, Power BI, Excel and modern
+                        data science tools to clean, analyse and visualize
+                        data. I enjoy discovering patterns, tracking KPIs,
+                        building analytical solutions and converting data
+                        into actionable insights.
+                    </p>
+
+                    <h3>My Approach</h3>
+
+                    <p>
+                        I believe good analysis starts with understanding
+                        the problem. From data cleaning and exploration to
+                        modelling and reporting, I focus on producing
+                        results that are clear, useful and connected to
+                        real-world decisions.
                     </p>
 
                 </div>
 
-            </div>
 
+                <div class="about-cards">
 
+                    <div class="info-card">
 
-            <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
 
-                <div class="card-icon">
-                    ↗
-                </div>
-
-                <div>
-
-                    <h4>
-                        Predictive Modeling
-                    </h4>
-
-                    <p>
-                        Building machine learning models
-                        using preprocessing, feature
-                        engineering and model evaluation.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="info-card">
-
-                <div class="card-icon">
-                    ⌘
-                </div>
-
-                <div>
-
-                    <h4>
-                        Data Visualization
-                    </h4>
-
-                    <p>
-                        Creating meaningful dashboards and
-                        visualizations using Power BI,
-                        Matplotlib and Seaborn.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="info-card">
-
-                <div class="card-icon">
-                    ▱
-                </div>
-
-                <div>
-
-                    <h4>
-                        Continuous Learning
-                    </h4>
-
-                    <p>
-                        Continuously developing skills in
-                        analytics, machine learning,
-                        statistics and business intelligence.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     SKILLS
-========================================================= -->
-
-<section
-    class="section skills-section"
-    id="skills"
->
-
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            TECHNICAL EXPERTISE
-        </div>
-
-        <h2>
-            Skills & Tech Stack
-        </h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            A toolkit for data analysis, machine learning,
-            visualization and business intelligence.
-        </p>
-
-    </div>
-
-
-
-    <!-- SKILL PROFICIENCY -->
-
-    <div class="skills-top-grid">
-
-
-        <div class="large-card">
-
-            <h3>
-                📊 Skill Proficiency
-            </h3>
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-
-                    <span>
-                        Python
-                    </span>
-
-                    <strong>
-                        90%
-                    </strong>
-
-                </div>
-
-                <div class="skill-bar">
-
-                    <span style="width: 90%;"></span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-
-                    <span>
-                        SQL
-                    </span>
-
-                    <strong>
-                        85%
-                    </strong>
-
-                </div>
-
-                <div class="skill-bar">
-
-                    <span style="width: 85%;"></span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-
-                    <span>
-                        Machine Learning
-                    </span>
-
-                    <strong>
-                        80%
-                    </strong>
-
-                </div>
-
-                <div class="skill-bar">
-
-                    <span style="width: 80%;"></span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-
-                    <span>
-                        Data Visualization
-                    </span>
-
-                    <strong>
-                        88%
-                    </strong>
-
-                </div>
-
-                <div class="skill-bar">
-
-                    <span style="width: 88%;"></span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-
-                    <span>
-                        Statistical Analysis
-                    </span>
-
-                    <strong>
-                        82%
-                    </strong>
-
-                </div>
-
-                <div class="skill-bar">
-
-                    <span style="width: 82%;"></span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-
-                    <span>
-                        Power BI
-                    </span>
-
-                    <strong>
-                        85%
-                    </strong>
-
-                </div>
-
-                <div class="skill-bar">
-
-                    <span style="width: 85%;"></span>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- ACHIEVEMENTS -->
-
-        <div class="large-card">
-
-            <h3>
-                🎯 Achievement Stats
-            </h3>
-
-
-            <div class="achievement blue-achievement">
-
-                <strong>
-                    85%
-                </strong>
-
-                <span>
-                    ML Model Accuracy
-                </span>
-
-            </div>
-
-
-            <div class="achievement green-achievement">
-
-                <strong>
-                    4+
-                </strong>
-
-                <span>
-                    Featured Projects
-                </span>
-
-            </div>
-
-
-            <div class="achievement purple-achievement">
-
-                <strong>
-                    9.5
-                </strong>
-
-                <span>
-                    University CGPA
-                </span>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- SKILL CATEGORIES -->
-
-    <div class="category-grid">
-
-
-        <!-- PROGRAMMING -->
-
-        <div class="category-card">
-
-            <h3>
-                💻 Programming Languages
-            </h3>
-
-            <div class="tags blue-tags">
-
-                <span>
-                    Python
-                </span>
-
-                <span>
-                    SQL
-                </span>
-
-                <span>
-                    R
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- LIBRARIES -->
-
-        <div class="category-card">
-
-            <h3>
-                📚 Libraries & Frameworks
-            </h3>
-
-            <div class="tags green-tags">
-
-                <span>
-                    Pandas
-                </span>
-
-                <span>
-                    NumPy
-                </span>
-
-                <span>
-                    Scikit-learn
-                </span>
-
-                <span>
-                    Matplotlib
-                </span>
-
-                <span>
-                    Seaborn
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- DATA HANDLING -->
-
-        <div class="category-card">
-
-            <h3>
-                🔄 Data Handling
-            </h3>
-
-            <div class="tags purple-tags">
-
-                <span>
-                    Data Cleaning
-                </span>
-
-                <span>
-                    Preprocessing
-                </span>
-
-                <span>
-                    Feature Engineering
-                </span>
-
-                <span>
-                    EDA
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- TOOLS -->
-
-        <div class="category-card">
-
-            <h3>
-                🛠 Tools & Platforms
-            </h3>
-
-            <div class="tags orange-tags">
-
-                <span>
-                    Power BI
-                </span>
-
-                <span>
-                    Tableau
-                </span>
-
-                <span>
-                    Advanced Excel
-                </span>
-
-                <span>
-                    Google Sheets
-                </span>
-
-                <span>
-                    Zoho CRM
-                </span>
-
-                <span>
-                    MySQL
-                </span>
-
-                <span>
-                    PostgreSQL
-                </span>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     EXPERIENCE
-========================================================= -->
-
-<section
-    class="section experience-section"
-    id="experience"
->
-
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            PROFESSIONAL JOURNEY
-        </div>
-
-        <h2>
-            Experience
-        </h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            Experience across data science, AI, CRM analytics
-            and business reporting.
-        </p>
-
-    </div>
-
-
-
-    <div class="timeline">
-
-
-        <!-- TELLME -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="experience-card featured-experience">
-
-                <div class="experience-top">
-
-                    <div>
-
-                        <h3>
-                            CRM Coordinator & Data Expert
-                        </h3>
-
-                        <h4>
-                            TellMe – HeartTales Wholeness Pvt. Ltd.
-                        </h4>
-
-                    </div>
-
-                    <span class="date">
-                        Apr 2026 – Present
-                    </span>
-
-                </div>
-
-
-                <p>
-                    Conduct data mining and analysis on real
-                    user and session data to identify
-                    behavioural patterns and engagement trends.
-                </p>
-
-                <p>
-                    Derive actionable insights from data to
-                    improve user experience, operational
-                    efficiency and business decision-making.
-                </p>
-
-                <p>
-                    Maintain live session tracking and MIS
-                    reporting using Google Sheets and Excel.
-                </p>
-
-
-                <div class="experience-tags">
-
-                    <span>
-                        Data Mining
-                    </span>
-
-                    <span>
-                        CRM
-                    </span>
-
-                    <span>
-                        Google Sheets
-                    </span>
-
-                    <span>
-                        Excel
-                    </span>
-
-                    <span>
-                        MIS Reporting
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- IBM -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="experience-card">
-
-                <div class="experience-top">
-
-                    <div>
-
-                        <h3>
-                            Artificial Intelligence Intern
-                        </h3>
-
-                        <h4>
-                            IBM – Virtual
-                        </h4>
-
-                    </div>
-
-                    <span class="date">
-                        Feb 2026 – Mar 2026
-                    </span>
-
-                </div>
-
-
-                <p>
-                    Worked on AI and machine learning workflows
-                    including data handling, model building,
-                    testing and performance evaluation.
-                </p>
-
-                <p>
-                    Strengthened analytical and problem-solving
-                    capabilities through hands-on model
-                    building and data analysis exercises.
-                </p>
-
-
-                <div class="experience-tags">
-
-                    <span>
-                        Artificial Intelligence
-                    </span>
-
-                    <span>
-                        Machine Learning
-                    </span>
-
-                    <span>
-                        Python
-                    </span>
-
-                    <span>
-                        Data Analysis
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- EDEPT -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="experience-card">
-
-                <div class="experience-top">
-
-                    <div>
-
-                        <h3>
-                            Campus Community Head – Intern
-                        </h3>
-
-                        <h4>
-                            edept, Mumbai
-                        </h4>
-
-                    </div>
-
-                    <span class="date">
-                        Oct 2025 – Apr 2026
-                    </span>
-
-                </div>
-
-
-                <p>
-                    Tracked and analysed lead engagement data,
-                    maintained centralized records and
-                    generated MIS reports for internal teams.
-                </p>
-
-                <p>
-                    Identified performance gaps through data
-                    observation and drove corrective action
-                    across cross-functional teams.
-                </p>
-
-
-                <div class="experience-tags">
-
-                    <span>
-                        Lead Analytics
-                    </span>
-
-                    <span>
-                        MIS Reporting
-                    </span>
-
-                    <span>
-                        Data Tracking
-                    </span>
-
-                    <span>
-                        Business Analysis
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- UNIFIED MENTOR -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-
-            <div class="experience-card">
-
-                <div class="experience-top">
-
-                    <div>
-
-                        <h3>
-                            Data Science Intern
-                        </h3>
-
-                        <h4>
-                            Unified Mentor Pvt. Ltd.
-                        </h4>
-
-                    </div>
-
-                    <span class="date">
-                        Apr 2025 – Jul 2025
-                    </span>
-
-                </div>
-
-
-                <p>
-                    Performed data cleaning, preprocessing and
-                    exploratory data analysis on structured
-                    datasets.
-                </p>
-
-                <p>
-                    Built and evaluated machine learning models
-                    using Python and generated data-driven
-                    reports.
-                </p>
-
-
-                <div class="experience-tags">
-
-                    <span>
-                        Python
-                    </span>
-
-                    <span>
-                        Pandas
-                    </span>
-
-                    <span>
-                        Scikit-learn
-                    </span>
-
-                    <span>
-                        EDA
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     PROJECTS
-========================================================= -->
-
-<section
-    class="section projects-section"
-    id="projects"
->
-
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            PORTFOLIO SHOWCASE
-        </div>
-
-        <h2>
-            Featured Projects
-        </h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            A selection of data science, machine learning
-            and analytical projects.
-        </p>
-
-    </div>
-
-
-
-    <!-- FILTER BUTTONS -->
-
-    <div class="project-filters">
-
-        <button
-            class="filter-btn active"
-            data-filter="all"
-            type="button"
-        >
-            All
-        </button>
-
-        <button
-            class="filter-btn"
-            data-filter="ml"
-            type="button"
-        >
-            Machine Learning
-        </button>
-
-        <button
-            class="filter-btn"
-            data-filter="analysis"
-            type="button"
-        >
-            Data Analysis
-        </button>
-
-    </div>
-
-
-
-    <!-- PROJECT GRID -->
-
-    <div class="projects-grid">
-
-
-        <!-- PROJECT 1 -->
-
-        <article
-            class="project-card"
-            data-category="ml"
-        >
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Machine Learning
-                </span>
-
-                <span>
-                    ◉
-                </span>
-
-            </div>
-
-
-            <h3>
-                Customer Satisfaction Prediction
-            </h3>
-
-
-            <p>
-                Built classification models with feature
-                engineering and evaluated model performance
-                using accuracy and precision to derive
-                business insights.
-            </p>
-
-
-            <div class="project-tags">
-
-                <span>
-                    Python
-                </span>
-
-                <span>
-                    Pandas
-                </span>
-
-                <span>
-                    NumPy
-                </span>
-
-                <span>
-                    Scikit-learn
-                </span>
-
-            </div>
-
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                rel="noopener"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-
-
-        <!-- PROJECT 2 -->
-
-        <article
-            class="project-card"
-            data-category="analysis"
-        >
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Data Analysis
-                </span>
-
-                <span>
-                    ◉
-                </span>
-
-            </div>
-
-
-            <h3>
-                Netflix Data Analysis
-            </h3>
-
-
-            <p>
-                Conducted exploratory data analysis and created
-                visualizations to uncover content trends and
-                user preferences.
-            </p>
-
-
-            <div class="project-tags">
-
-                <span>
-                    Python
-                </span>
-
-                <span>
-                    Pandas
-                </span>
-
-                <span>
-                    Matplotlib
-                </span>
-
-                <span>
-                    Seaborn
-                </span>
-
-            </div>
-
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                rel="noopener"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-
-
-        <!-- PROJECT 3 -->
-
-        <article
-            class="project-card"
-            data-category="analysis"
-        >
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Data Analysis
-                </span>
-
-                <span>
-                    ◉
-                </span>
-
-            </div>
-
-
-            <h3>
-                Digital Payment Trends
-            </h3>
-
-
-            <p>
-                Analysed large-scale datasets to identify
-                digital payment conversion trends across
-                semi-urban and rural markets.
-            </p>
-
-
-            <div class="project-tags">
-
-                <span>
-                    Python
-                </span>
-
-                <span>
-                    Excel
-                </span>
-
-                <span>
-                    SQL
-                </span>
-
-            </div>
-
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                rel="noopener"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-
-
-        <!-- PROJECT 4 -->
-
-        <article
-            class="project-card"
-            data-category="ml"
-        >
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Machine Learning
-                </span>
-
-                <span>
-                    ◉
-                </span>
-
-            </div>
-
-
-            <h3>
-                Air Quality Prediction
-            </h3>
-
-
-            <p>
-                Built regression models using preprocessing
-                and feature selection techniques for AQI
-                prediction.
-            </p>
-
-
-            <div class="project-tags">
-
-                <span>
-                    Python
-                </span>
-
-                <span>
-                    Pandas
-                </span>
-
-                <span>
-                    NumPy
-                </span>
-
-                <span>
-                    Scikit-learn
-                </span>
-
-            </div>
-
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                rel="noopener"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-
-    </div>
-
-
-
-    <!-- GITHUB CTA -->
-
-    <div class="github-cta">
-
-        <div class="github-icon">
-            ◉
-        </div>
-
-        <h3>
-            Explore More Projects
-        </h3>
-
-        <p>
-            Check out my GitHub for more data science
-            projects, code samples and analytical work.
-        </p>
-
-        <a
-            href="https://github.com/Aaron-Mendonca"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary"
-        >
-            ◉ &nbsp; Visit GitHub Profile
-        </a>
-
-    </div>
-
-
-</section>
-
-
-
-<!-- =========================================================
-     CERTIFICATIONS & EDUCATION
-========================================================= -->
-
-<section
-    class="section certifications-section"
-    id="certifications"
->
-
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            ACHIEVEMENTS
-        </div>
-
-        <h2>
-            Certifications & Education
-        </h2>
-
-        <div class="heading-line"></div>
-
-    </div>
-
-
-
-    <div class="cert-grid">
-
-
-        <!-- EDUCATION -->
-
-        <div class="cert-card">
-
-            <span class="cert-icon">
-                🎓
-            </span>
-
-            <div>
-
-                <h3>
-                    BSc Data Science
-                </h3>
-
-                <p>
-                    University of Mumbai
-                </p>
-
-                <span>
-                    CGPA: 9.5 • 2027
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- BRITISH AIRWAYS -->
-
-        <div class="cert-card">
-
-            <span class="cert-icon">
-                🏆
-            </span>
-
-            <div>
-
-                <h3>
-                    British Airways Data Science
-                </h3>
-
-                <p>
-                    Forage Job Simulation
-                </p>
-
-                <span>
-                    January 2026
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- EXCEL -->
-
-        <div class="cert-card">
-
-            <span class="cert-icon">
-                📊
-            </span>
-
-            <div>
-
-                <h3>
-                    Advanced Excel
-                </h3>
-
-                <p>
-                    ExcelR
-                </p>
-
-                <span>
-                    August 2024
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- NPTEL -->
-
-        <div class="cert-card">
-
-            <span class="cert-icon">
-                🐍
-            </span>
-
-            <div>
-
-                <h3>
-                    The Joy of Computing Using Python
-                </h3>
-
-                <p>
-                    NPTEL
-                </p>
-
-                <span>
-                    November 2024
-                </span>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- TOPPER -->
-
-        <div class="cert-card">
-
-            <span class="cert-icon">
-                🥇
-            </span>
-
-            <div>
-
-                <h3>
-                    Topper Award – 1st Place
-                </h3>
-
-                <p>
-                    Certificate of Academic Excellence
-                </p>
-
-                <span>
-                    June 2025
-                </span>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     CONTACT
-========================================================= -->
-
-<section
-    class="section contact-section"
-    id="contact"
->
-
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            LET'S CONNECT
-        </div>
-
-        <h2>
-            Get In Touch
-        </h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            Feel free to reach out about data analytics,
-            machine learning, business intelligence,
-            projects or opportunities.
-        </p>
-
-    </div>
-
-
-
-    <div class="contact-grid">
-
-
-        <!-- CONTACT FORM -->
-
-        <div class="contact-card">
-
-            <h3>
-                ✈ Send a Message
-            </h3>
-
-
-            <form id="contactForm">
-
-
-                <div class="form-row">
-
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Your name"
-                            required
-                        >
+                        <div>
+                            <h3>Data Analysis</h3>
+                            <p>
+                                Cleaning, exploring and analysing datasets
+                                to identify useful patterns and insights.
+                            </p>
+                        </div>
 
                     </div>
 
 
+                    <div class="info-card">
 
-                    <div class="form-group">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
 
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="your.email@example.com"
-                            required
-                        >
+                        <div>
+                            <h3>Business Intelligence</h3>
+                            <p>
+                                MIS reporting, KPI tracking and dashboards
+                                that make information easier to understand.
+                            </p>
+                        </div>
 
                     </div>
 
 
-                </div>
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <div>
+                            <h3>Machine Learning</h3>
+                            <p>
+                                Building and evaluating predictive models
+                                using Python and Scikit-learn.
+                            </p>
+                        </div>
+
+                    </div>
 
 
+                    <div class="info-card">
 
-                <div class="form-group">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
 
-                    <label for="subject">
-                        Subject
-                    </label>
+                        <div>
+                            <h3>Analytical Thinking</h3>
+                            <p>
+                                Combining statistical thinking and
+                                problem-solving to support decisions.
+                            </p>
+                        </div>
 
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="What's this about?"
-                        required
-                    >
-
-                </div>
-
-
-
-                <div class="form-group">
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        placeholder="Tell me about your project or opportunity..."
-                        required
-                    ></textarea>
+                    </div>
 
                 </div>
 
+            </div>
+
+        </section>
 
 
-                <button
-                    type="submit"
-                    class="btn btn-primary send-btn"
-                >
+        <!-- =========================
+             SKILLS
+        ========================== -->
 
-                    ✈ &nbsp; Send Message
+        <section id="skills" class="section">
 
+            <div class="section-heading">
+
+                <span class="section-badge">
+                    <i class="fa-solid fa-code"></i>
+                    TECHNICAL EXPERTISE
+                </span>
+
+                <h2>Skills & Tech Stack</h2>
+
+                <div class="heading-line"></div>
+
+                <p>
+                    A practical toolkit for data analysis, visualization,
+                    machine learning and business intelligence.
+                </p>
+
+            </div>
+
+
+            <div class="skills-main-grid">
+
+                <!-- Programming -->
+
+                <div class="skill-panel">
+
+                    <div class="panel-title">
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+
+                        <div>
+                            <h3>Programming & Querying</h3>
+                            <p>Languages used for analysis and modelling</p>
+                        </div>
+                    </div>
+
+                    <div class="tag-container">
+                        <span class="tag blue">Python</span>
+                        <span class="tag blue">SQL</span>
+                        <span class="tag blue">R</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Libraries -->
+
+                <div class="skill-panel">
+
+                    <div class="panel-title">
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+
+                        <div>
+                            <h3>Libraries & Frameworks</h3>
+                            <p>Tools for data science and machine learning</p>
+                        </div>
+                    </div>
+
+                    <div class="tag-container">
+                        <span class="tag green">Pandas</span>
+                        <span class="tag green">NumPy</span>
+                        <span class="tag green">Scikit-learn</span>
+                        <span class="tag green">Matplotlib</span>
+                        <span class="tag green">Seaborn</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Visualization -->
+
+                <div class="skill-panel">
+
+                    <div class="panel-title">
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+
+                        <div>
+                            <h3>Visualization & BI</h3>
+                            <p>Turning data into clear visual insights</p>
+                        </div>
+                    </div>
+
+                    <div class="tag-container">
+                        <span class="tag purple">Power BI</span>
+                        <span class="tag purple">Tableau</span>
+                        <span class="tag purple">Excel</span>
+                        <span class="tag purple">Google Sheets</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Databases -->
+
+                <div class="skill-panel">
+
+                    <div class="panel-title">
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+
+                        <div>
+                            <h3>Databases</h3>
+                            <p>Working with structured data systems</p>
+                        </div>
+                    </div>
+
+                    <div class="tag-container">
+                        <span class="tag orange">MySQL</span>
+                        <span class="tag orange">PostgreSQL</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Analytics -->
+
+                <div class="skill-panel">
+
+                    <div class="panel-title">
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+
+                        <div>
+                            <h3>Data & ML Techniques</h3>
+                            <p>Methods used across projects and work</p>
+                        </div>
+                    </div>
+
+                    <div class="tag-container">
+                        <span class="tag blue">EDA</span>
+                        <span class="tag blue">Feature Engineering</span>
+                        <span class="tag blue">Predictive Modelling</span>
+                        <span class="tag blue">Statistical Analysis</span>
+                        <span class="tag blue">Hypothesis Testing</span>
+                    </div>
+
+                </div>
+
+
+                <!-- CRM -->
+
+                <div class="skill-panel">
+
+                    <div class="panel-title">
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-business-time"></i>
+                        </div>
+
+                        <div>
+                            <h3>CRM & Reporting</h3>
+                            <p>Business reporting and operational analytics</p>
+                        </div>
+                    </div>
+
+                    <div class="tag-container">
+                        <span class="tag green">Zoho CRM</span>
+                        <span class="tag green">MIS Reporting</span>
+                        <span class="tag green">Dashboard Reporting</span>
+                        <span class="tag green">KPI Tracking</span>
+                        <span class="tag green">Business Intelligence</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
+
+        <section id="experience" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-badge">
+                    <i class="fa-solid fa-briefcase"></i>
+                    PROFESSIONAL JOURNEY
+                </span>
+
+                <h2>Experience</h2>
+
+                <div class="heading-line"></div>
+
+                <p>
+                    Hands-on experience across data analysis, machine
+                    learning, CRM analytics and reporting.
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <!-- TellMe -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+
+                            <div>
+                                <span class="experience-status">
+                                    CURRENT
+                                </span>
+
+                                <h3>
+                                    CRM Coordinator & Data Expert
+                                </h3>
+
+                                <p class="company">
+                                    TellMe – HeartTales Wholeness Pvt. Ltd.
+                                </p>
+                            </div>
+
+                            <span class="experience-date">
+                                Apr 2026 – Present
+                            </span>
+
+                        </div>
+
+                        <ul>
+                            <li>
+                                Conduct data mining and analysis on real
+                                user and session data to identify
+                                behavioural patterns and engagement trends.
+                            </li>
+
+                            <li>
+                                Derive actionable insights to improve user
+                                experience, operational efficiency and
+                                business decision-making.
+                            </li>
+
+                            <li>
+                                Maintain live session tracking and MIS
+                                reporting using Google Sheets and Excel
+                                with high accuracy.
+                            </li>
+                        </ul>
+
+                        <div class="experience-tags">
+                            <span>Data Mining</span>
+                            <span>Excel</span>
+                            <span>Google Sheets</span>
+                            <span>MIS Reporting</span>
+                            <span>CRM</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- IBM -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+
+                            <div>
+                                <h3>Artificial Intelligence Intern</h3>
+
+                                <p class="company">
+                                    IBM · Virtual
+                                </p>
+                            </div>
+
+                            <span class="experience-date">
+                                Feb 2026 – Mar 2026
+                            </span>
+
+                        </div>
+
+                        <ul>
+                            <li>
+                                Worked on AI/ML workflows including data
+                                handling, model building, testing and
+                                performance evaluation.
+                            </li>
+
+                            <li>
+                                Strengthened analytical and problem-solving
+                                capabilities through hands-on model
+                                building and data analysis exercises.
+                            </li>
+                        </ul>
+
+                        <div class="experience-tags">
+                            <span>Artificial Intelligence</span>
+                            <span>Machine Learning</span>
+                            <span>Data Analysis</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- edept -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+
+                            <div>
+                                <h3>Campus Community Head</h3>
+
+                                <p class="company">
+                                    edept · Mumbai
+                                </p>
+                            </div>
+
+                            <span class="experience-date">
+                                Oct 2025 – Apr 2026
+                            </span>
+
+                        </div>
+
+                        <ul>
+                            <li>
+                                Tracked and analysed lead engagement data,
+                                maintained centralized records and
+                                generated MIS reports.
+                            </li>
+
+                            <li>
+                                Identified performance gaps through data
+                                observation and drove corrective action
+                                across cross-functional teams.
+                            </li>
+                        </ul>
+
+                        <div class="experience-tags">
+                            <span>Lead Analytics</span>
+                            <span>MIS Reporting</span>
+                            <span>Data Tracking</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Unified Mentor -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+
+                            <div>
+                                <h3>Data Science Intern</h3>
+
+                                <p class="company">
+                                    Unified Mentor Pvt. Ltd. · Mumbai
+                                </p>
+                            </div>
+
+                            <span class="experience-date">
+                                Apr 2025 – Jul 2025
+                            </span>
+
+                        </div>
+
+                        <ul>
+                            <li>
+                                Performed data cleaning, preprocessing and
+                                exploratory data analysis on structured
+                                datasets.
+                            </li>
+
+                            <li>
+                                Built and evaluated machine learning models
+                                using Python.
+                            </li>
+
+                            <li>
+                                Generated data-driven reports and delivered
+                                actionable insights to support business
+                                decision-making.
+                            </li>
+                        </ul>
+
+                        <div class="experience-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                            <span>EDA</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+
+                <span class="section-badge">
+                    <i class="fa-solid fa-code"></i>
+                    PORTFOLIO SHOWCASE
+                </span>
+
+                <h2>Featured Projects</h2>
+
+                <div class="heading-line"></div>
+
+                <p>
+                    Selected academic projects demonstrating data analysis,
+                    machine learning and research-oriented problem solving.
+                </p>
+
+            </div>
+
+
+            <!-- Project filter -->
+
+            <div class="project-filters">
+
+                <button class="filter-button active" data-filter="all">
+                    All
                 </button>
 
+                <button class="filter-button" data-filter="ml">
+                    Machine Learning
+                </button>
 
-            </form>
+                <button class="filter-button" data-filter="analysis">
+                    Data Analysis
+                </button>
 
-        </div>
+                <button class="filter-button" data-filter="research">
+                    Research
+                </button>
 
-
-
-        <!-- CONTACT INFORMATION -->
-
-        <div>
-
-
-            <div class="contact-card">
-
-                <h3>
-                    ⌖ Contact Information
-                </h3>
+            </div>
 
 
+            <div class="projects-grid">
 
-                <!-- EMAIL -->
 
-                <a
-                    href="mailto:mendoncaaaron27@gmail.com"
-                    class="contact-item"
-                >
+                <!-- Project 1 -->
 
-                    <span class="contact-icon">
-                        ✉
-                    </span>
+                <article class="project-card" data-category="ml">
 
-                    <div>
+                    <div class="project-top">
 
-                        <small>
-                            Email
-                        </small>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
 
-                        <strong>
-                            mendoncaaaron27@gmail.com
-                        </strong>
+                        <span class="project-category">
+                            MACHINE LEARNING
+                        </span>
 
                     </div>
 
-                </a>
+                    <h3>Customer Satisfaction Prediction</h3>
+
+                    <p>
+                        Built classification models with feature engineering
+                        and evaluated model performance using accuracy and
+                        precision to derive business insights.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
+                    </div>
+
+                    <div class="project-footer">
+                        <span>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Academic Project
+                        </span>
+                    </div>
+
+                </article>
 
 
+                <!-- Project 2 -->
 
-                <!-- LINKEDIN -->
+                <article class="project-card" data-category="analysis">
 
-                <a
-                    href="https://www.linkedin.com/in/aaronmendonca/"
-                    target="_blank"
-                    rel="noopener"
-                    class="contact-item"
-                >
+                    <div class="project-top">
 
-                    <span class="contact-icon">
-                        in
-                    </span>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-film"></i>
+                        </div>
 
-                    <div>
-
-                        <small>
-                            LinkedIn
-                        </small>
-
-                        <strong>
-                            aaronmendonca
-                        </strong>
+                        <span class="project-category">
+                            DATA ANALYSIS
+                        </span>
 
                     </div>
 
-                </a>
+                    <h3>Netflix Data Analysis</h3>
+
+                    <p>
+                        Conducted in-depth exploratory data analysis and
+                        created visualizations to uncover content trends
+                        and user preferences for strategic decision-making.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                    </div>
+
+                    <div class="project-footer">
+                        <span>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Academic Project
+                        </span>
+                    </div>
+
+                </article>
 
 
+                <!-- Project 3 -->
 
-                <!-- GITHUB -->
+                <article class="project-card" data-category="research analysis">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+
+                        <span class="project-category">
+                            RESEARCH
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Digital Payment Trends
+                    </h3>
+
+                    <p>
+                        Analysed large-scale datasets to identify conversion
+                        trends across semi-urban and rural markets using
+                        Python, Excel and SQL.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Excel</span>
+                        <span>SQL</span>
+                        <span>Data Analysis</span>
+                    </div>
+
+                    <div class="project-footer">
+                        <span>
+                            <i class="fa-solid fa-book"></i>
+                            University of Mumbai Research
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <!-- Project 4 -->
+
+                <article class="project-card" data-category="ml">
+
+                    <div class="project-top">
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-wind"></i>
+                        </div>
+
+                        <span class="project-category">
+                            MACHINE LEARNING
+                        </span>
+
+                    </div>
+
+                    <h3>Air Quality (AQI) Prediction</h3>
+
+                    <p>
+                        Built regression models with feature selection and
+                        preprocessing to predict air quality and evaluated
+                        the models using regression performance metrics.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>Scikit-learn</span>
+                    </div>
+
+                    <div class="project-footer">
+                        <span>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Academic Project
+                        </span>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- GitHub CTA -->
+
+            <div class="github-cta">
+
+                <div class="github-cta-icon">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+                <h3>Explore More Projects</h3>
+
+                <p>
+                    Check out my GitHub for more data science projects,
+                    code samples and future work.
+                </p>
 
                 <a
                     href="https://github.com/Aaron-Mendonca"
                     target="_blank"
-                    rel="noopener"
-                    class="contact-item"
+                    rel="noopener noreferrer"
+                    class="primary-button"
                 >
-
-                    <span class="contact-icon">
-                        ◉
-                    </span>
-
-                    <div>
-
-                        <small>
-                            GitHub
-                        </small>
-
-                        <strong>
-                            Aaron-Mendonca
-                        </strong>
-
-                    </div>
-
+                    <i class="fa-brands fa-github"></i>
+                    Visit GitHub Profile
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
 
+            </div>
+
+        </section>
 
 
-                <!-- PHONE -->
+        <!-- =========================
+             EDUCATION
+        ========================== -->
 
-                <a
-                    href="tel:+918976351440"
-                    class="contact-item"
-                >
+        <section id="education" class="section">
 
-                    <span class="contact-icon phone">
-                        ☎
-                    </span>
+            <div class="section-heading">
 
-                    <div>
+                <span class="section-badge">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    EDUCATION & ACHIEVEMENTS
+                </span>
 
-                        <small>
-                            Phone
-                        </small>
+                <h2>Education & Certifications</h2>
 
-                        <strong>
-                            +91 8976351440
-                        </strong>
-
-                    </div>
-
-                </a>
-
+                <div class="heading-line"></div>
 
             </div>
 
 
+            <div class="education-grid">
 
-            <!-- CONNECT CARD -->
+                <!-- Education -->
 
-            <div class="connect-card">
+                <div class="education-panel">
 
-                <h3>
-                    Let's Connect
-                </h3>
+                    <div class="panel-title">
+
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div>
+                            <h3>Education</h3>
+                            <p>Academic background</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            2027
+                        </div>
+
+                        <div>
+                            <h3>BSc Data Science</h3>
+
+                            <p class="education-place">
+                                University of Mumbai · Mumbai
+                            </p>
+
+                            <span class="cgpa">
+                                CGPA 9.5
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div class="education-year">
+                            2024
+                        </div>
+
+                        <div>
+                            <h3>Higher Secondary · Science</h3>
+
+                            <p class="education-place">
+                                St. Joseph's Junior College · Bhayandar,
+                                Mumbai
+                            </p>
+
+                            <span class="cgpa">
+                                75.67%
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Certifications -->
+
+                <div class="education-panel">
+
+                    <div class="panel-title">
+
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+
+                        <div>
+                            <h3>Certifications</h3>
+                            <p>Learning & professional development</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="certification-list">
+
+                        <div class="certification-item">
+                            <div class="cert-icon">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+
+                            <div>
+                                <h3>
+                                    British Airways Data Science
+                                    Job Simulation
+                                </h3>
+                                <p>Forage · Jan 2026</p>
+                            </div>
+                        </div>
+
+
+                        <div class="certification-item">
+                            <div class="cert-icon">
+                                <i class="fa-solid fa-table"></i>
+                            </div>
+
+                            <div>
+                                <h3>Advanced Excel</h3>
+                                <p>ExcelR · Aug 2024</p>
+                            </div>
+                        </div>
+
+
+                        <div class="certification-item">
+                            <div class="cert-icon">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+
+                            <div>
+                                <h3>
+                                    The Joy of Computing Using Python
+                                </h3>
+                                <p>NPTEL · Nov 2024</p>
+                            </div>
+                        </div>
+
+
+                        <div class="certification-item achievement">
+
+                            <div class="cert-icon">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+
+                            <div>
+                                <h3>
+                                    Certificate of Academic Excellence
+                                </h3>
+
+                                <p>
+                                    Topper Award · 1st Place · edept · Jun 2025
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+
+                <h2>Get In Touch</h2>
+
+                <div class="heading-line"></div>
 
                 <p>
-                    Feel free to reach out through any of
-                    these platforms. I'm always open to
-                    discussing data science, analytics,
-                    machine learning and potential
-                    collaborations.
+                    I'm open to connecting with professionals, discussing
+                    data analytics and exploring opportunities where I can
+                    contribute and continue learning.
                 </p>
 
+            </div>
 
-                <div class="connect-buttons">
+
+            <div class="contact-grid">
+
+                <!-- Contact information -->
+
+                <div class="contact-panel">
+
+                    <div class="panel-title">
+
+                        <div class="panel-icon">
+                            <i class="fa-regular fa-address-card"></i>
+                        </div>
+
+                        <div>
+                            <h3>Contact Information</h3>
+                            <p>Let's start a conversation</p>
+                        </div>
+
+                    </div>
 
 
                     <a
-                        href="https://www.linkedin.com/in/aaronmendonca/"
-                        target="_blank"
-                        rel="noopener"
-                        class="small-btn"
+                        href="mailto:mendoncaaaron27@gmail.com"
+                        class="contact-item"
                     >
-                        in &nbsp; LinkedIn
+
+                        <div class="contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <span>Email</span>
+                            <strong>
+                                mendoncaaaron27@gmail.com
+                            </strong>
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/aaron-mendonca01/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <div>
+                            <span>LinkedIn</span>
+                            <strong>
+                                aaron-mendonca01
+                            </strong>
+                        </div>
+
                     </a>
 
 
                     <a
                         href="https://github.com/Aaron-Mendonca"
                         target="_blank"
-                        rel="noopener"
-                        class="small-btn"
+                        rel="noopener noreferrer"
+                        class="contact-item"
                     >
-                        ◉ &nbsp; GitHub
+
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+
+                        <div>
+                            <span>GitHub</span>
+                            <strong>
+                                Aaron-Mendonca
+                            </strong>
+                        </div>
+
                     </a>
 
+
+                    <a
+                        href="tel:+918976351440"
+                        class="contact-item"
+                    >
+
+                        <div class="contact-icon phone-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <span>Phone</span>
+                            <strong>
+                                +91 8976351440
+                            </strong>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <!-- Connect -->
+
+                <div class="connect-panel">
+
+                    <div class="connect-content">
+
+                        <span class="connect-badge">
+                            <span class="status-dot"></span>
+                            Open to opportunities
+                        </span>
+
+                        <h3>Let's Connect</h3>
+
+                        <p>
+                            Feel free to reach out through any of these
+                            platforms. I'm interested in data analytics,
+                            data science, machine learning and meaningful
+                            opportunities to apply my skills.
+                        </p>
+
+                        <div class="connect-buttons">
+
+                            <a
+                                href="https://www.linkedin.com/in/aaron-mendonca01/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="secondary-button"
+                            >
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                LinkedIn
+                            </a>
+
+                            <a
+                                href="https://github.com/Aaron-Mendonca"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="secondary-button"
+                            >
+                                <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                            <a
+                                href="mailto:mendoncaaaron27@gmail.com"
+                                class="secondary-button"
+                            >
+                                <i class="fa-regular fa-envelope"></i>
+                                Email Me
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-grid">
+
+                <div class="footer-about">
+
+                    <a href="#home" class="footer-brand">
+                        Aaron Mendonca
+                    </a>
+
+                    <p>
+                        Aspiring Data Analyst & Data Science student
+                        passionate about turning data into actionable
+                        insights.
+                    </p>
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://github.com/Aaron-Mendonca"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/aaron-mendonca01/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a
+                            href="mailto:mendoncaaaron27@gmail.com"
+                            aria-label="Email"
+                        >
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+
+                </div>
+
+
+                <div class="footer-contact">
+
+                    <h3>Get in Touch</h3>
+
+                    <a href="mailto:mendoncaaaron27@gmail.com">
+                        Email: mendoncaaaron27@gmail.com
+                    </a>
+
+                    <a href="tel:+918976351440">
+                        Phone: +91 8976351440
+                    </a>
+
+                    <p>
+                        Status:
+                        <span class="status-dot"></span>
+                        Available for opportunities
+                    </p>
 
                 </div>
 
             </div>
 
 
-        </div>
+            <div class="footer-bottom">
 
+                <p>
+                    © <span id="current-year"></span>
+                    Aaron Mendonca. All rights reserved.
+                </p>
 
-    </div>
-
-</section>
-
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer class="footer">
-
-
-    <div class="footer-grid">
-
-
-        <!-- ABOUT -->
-
-        <div>
-
-            <h3>
-                Aaron Mendonca
-            </h3>
-
-            <p>
-                Aspiring Data Analyst and Data Science
-                professional passionate about turning
-                data into actionable insights.
-            </p>
-
-
-            <div class="footer-socials">
-
-
-                <a
-                    href="https://github.com/Aaron-Mendonca"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="GitHub"
-                >
-                    ◉
-                </a>
-
-
-                <a
-                    href="https://www.linkedin.com/in/aaronmendonca/"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="LinkedIn"
-                >
-                    in
-                </a>
-
-
-                <a
-                    href="mailto:mendoncaaaron27@gmail.com"
-                    aria-label="Email"
-                >
-                    ✉
-                </a>
-
+                <p>
+                    Built with
+                    <i class="fa-solid fa-heart"></i>
+                    using HTML & CSS
+                </p>
 
             </div>
 
         </div>
 
+    </footer>
 
 
-        <!-- QUICK LINKS -->
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
 
-        <div>
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
-            <h4>
-                Quick Links
-            </h4>
 
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
-            <a href="#home">
-                Home
-            </a>
+    <script>
 
-            <a href="#about">
-                About
-            </a>
+        /* =========================
+           TYPING EFFECT
+        ========================== */
 
-            <a href="#skills">
-                Skills
-            </a>
+        const typingElement = document.getElementById("typing-text");
 
-            <a href="#experience">
-                Experience
-            </a>
+        const typingWords = [
+            "Data Analyst",
+            "Data Science Student",
+            "Machine Learning Enthusiast",
+            "Business Intelligence Learner"
+        ];
 
-            <a href="#projects">
-                Projects
-            </a>
+        let wordIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
 
-            <a href="#contact">
-                Contact
-            </a>
+        function typeEffect() {
 
-        </div>
+            const currentWord = typingWords[wordIndex];
 
+            if (!deleting) {
 
+                typingElement.textContent =
+                    currentWord.substring(0, charIndex + 1);
 
-        <!-- GET IN TOUCH -->
+                charIndex++;
 
-        <div>
+                if (charIndex === currentWord.length) {
 
-            <h4>
-                Get in Touch
-            </h4>
+                    deleting = true;
 
+                    setTimeout(typeEffect, 1600);
 
-            <p>
-
-                Email:
-
-                <a
-                    href="mailto:mendoncaaaron27@gmail.com"
-                >
-                    mendoncaaaron27@gmail.com
-                </a>
-
-            </p>
-
-
-            <p>
-
-                Phone:
-
-                <a
-                    href="tel:+918976351440"
-                >
-                    +91 8976351440
-                </a>
-
-            </p>
-
-
-            <p>
-
-                Status:
-
-                <span class="status">
-                    ● Available for opportunities
-                </span>
-
-            </p>
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- FOOTER BOTTOM -->
-
-    <div class="footer-bottom">
-
-
-        <span>
-            © 2026 Aaron Mendonca. All rights reserved.
-        </span>
-
-
-        <span>
-            Built with
-            <span class="footer-heart">♥</span>
-            using HTML & CSS — from Aaron Mendonca
-        </span>
-
-
-    </div>
-
-
-</footer>
-
-
-
-<!-- =========================================================
-     BACK TO TOP
-========================================================= -->
-
-<button
-    class="back-to-top"
-    id="backToTop"
-    type="button"
-    aria-label="Back to top"
->
-    ↑
-</button>
-
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
-<script>
-
-
-/* =========================================================
-   MOBILE NAVIGATION
-========================================================= */
-
-const mobileMenu =
-    document.getElementById("mobileMenu");
-
-const navLinks =
-    document.querySelector(".nav-links");
-
-
-if (mobileMenu && navLinks) {
-
-    mobileMenu.addEventListener(
-        "click",
-        function () {
-
-            navLinks.classList.toggle(
-                "mobile-open"
-            );
-
-        }
-    );
-
-
-    document
-        .querySelectorAll(".nav-link")
-        .forEach(function (link) {
-
-            link.addEventListener(
-                "click",
-                function () {
-
-                    navLinks.classList.remove(
-                        "mobile-open"
-                    );
-
+                    return;
                 }
-            );
-
-        });
-
-}
-
-
-
-/* =========================================================
-   TYPING EFFECT
-========================================================= */
-
-const typingText =
-    document.getElementById("typingText");
-
-
-const roles = [
-    "ML Specialist",
-    "Data Analyst",
-    "Insight Creator",
-    "Data Scientist"
-];
-
-
-let roleIndex = 0;
-
-let characterIndex = 0;
-
-let deleting = false;
-
-
-function typeEffect() {
-
-
-    if (!typingText) {
-        return;
-    }
-
-
-    const currentRole =
-        roles[roleIndex];
-
-
-    if (!deleting) {
-
-
-        typingText.textContent =
-            currentRole.substring(
-                0,
-                characterIndex + 1
-            );
-
-
-        characterIndex++;
-
-
-        if (
-            characterIndex ===
-            currentRole.length
-        ) {
-
-            deleting = true;
-
-
-            setTimeout(
-                typeEffect,
-                1600
-            );
-
-
-            return;
-
-        }
-
-
-    } else {
-
-
-        typingText.textContent =
-            currentRole.substring(
-                0,
-                characterIndex - 1
-            );
-
-
-        characterIndex--;
-
-
-        if (characterIndex === 0) {
-
-            deleting = false;
-
-            roleIndex++;
-
-            if (
-                roleIndex >=
-                roles.length
-            ) {
-
-                roleIndex = 0;
-
-            }
-
-        }
-
-    }
-
-
-    setTimeout(
-        typeEffect,
-        deleting ? 55 : 90
-    );
-
-}
-
-
-typeEffect();
-
-
-
-/* =========================================================
-   PROJECT FILTER
-========================================================= */
-
-const filterButtons =
-    document.querySelectorAll(
-        ".filter-btn"
-    );
-
-
-const projectCards =
-    document.querySelectorAll(
-        ".project-card"
-    );
-
-
-filterButtons.forEach(
-    function (button) {
-
-
-        button.addEventListener(
-            "click",
-            function () {
-
-
-                filterButtons.forEach(
-                    function (btn) {
-
-                        btn.classList.remove(
-                            "active"
-                        );
-
-                    }
-                );
-
-
-                button.classList.add(
-                    "active"
-                );
-
-
-                const filter =
-                    button.dataset.filter;
-
-
-                projectCards.forEach(
-                    function (card) {
-
-
-                        if (
-                            filter === "all" ||
-                            card.dataset.category ===
-                            filter
-                        ) {
-
-                            card.style.display =
-                                "block";
-
-                        } else {
-
-                            card.style.display =
-                                "none";
-
-                        }
-
-                    }
-                );
-
-
-            }
-        );
-
-
-    }
-);
-
-
-
-/* =========================================================
-   CONTACT FORM
-========================================================= */
-
-const contactForm =
-    document.getElementById(
-        "contactForm"
-    );
-
-
-if (contactForm) {
-
-
-    contactForm.addEventListener(
-        "submit",
-        function (event) {
-
-
-            event.preventDefault();
-
-
-            const name =
-                document.getElementById(
-                    "name"
-                ).value;
-
-
-            const email =
-                document.getElementById(
-                    "email"
-                ).value;
-
-
-            const subject =
-                document.getElementById(
-                    "subject"
-                ).value;
-
-
-            const message =
-                document.getElementById(
-                    "message"
-                ).value;
-
-
-            const mailSubject =
-                encodeURIComponent(
-                    subject
-                );
-
-
-            const mailBody =
-                encodeURIComponent(
-
-                    "Name: " +
-                    name +
-
-                    "\nEmail: " +
-                    email +
-
-                    "\n\nMessage:\n" +
-                    message
-
-                );
-
-
-            window.location.href =
-                "mailto:mendoncaaaron27@gmail.com" +
-                "?subject=" +
-                mailSubject +
-                "&body=" +
-                mailBody;
-
-
-        }
-    );
-
-}
-
-
-
-/* =========================================================
-   SCROLL PROGRESS
-========================================================= */
-
-const scrollProgress =
-    document.getElementById(
-        "scrollProgress"
-    );
-
-
-window.addEventListener(
-    "scroll",
-    function () {
-
-
-        if (!scrollProgress) {
-            return;
-        }
-
-
-        const scrollTop =
-            window.scrollY;
-
-
-        const documentHeight =
-            document.documentElement
-                .scrollHeight -
-            document.documentElement
-                .clientHeight;
-
-
-        if (documentHeight <= 0) {
-            return;
-        }
-
-
-        const progress =
-            (scrollTop /
-                documentHeight) *
-            100;
-
-
-        scrollProgress.style.width =
-            progress + "%";
-
-
-    }
-);
-
-
-
-/* =========================================================
-   BACK TO TOP
-========================================================= */
-
-const backToTop =
-    document.getElementById(
-        "backToTop"
-    );
-
-
-if (backToTop) {
-
-
-    window.addEventListener(
-        "scroll",
-        function () {
-
-
-            if (
-                window.scrollY >
-                500
-            ) {
-
-                backToTop.classList.add(
-                    "visible"
-                );
 
             } else {
 
-                backToTop.classList.remove(
-                    "visible"
-                );
+                typingElement.textContent =
+                    currentWord.substring(0, charIndex - 1);
+
+                charIndex--;
+
+                if (charIndex === 0) {
+
+                    deleting = false;
+
+                    wordIndex =
+                        (wordIndex + 1) % typingWords.length;
+
+                }
 
             }
 
-
+            setTimeout(
+                typeEffect,
+                deleting ? 45 : 90
+            );
         }
-    );
+
+        typeEffect();
 
 
-    backToTop.addEventListener(
-        "click",
-        function () {
+        /* =========================
+           MOBILE MENU
+        ========================== */
+
+        const mobileButton =
+            document.querySelector(".mobile-menu-button");
+
+        const navMenu =
+            document.querySelector(".nav-menu");
+
+        mobileButton.addEventListener("click", () => {
+
+            navMenu.classList.toggle("mobile-open");
+
+            const icon =
+                mobileButton.querySelector("i");
+
+            if (navMenu.classList.contains("mobile-open")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+
+        });
 
 
-            window.scrollTo({
+        /* Close mobile menu after clicking */
 
-                top: 0,
+        document.querySelectorAll(".nav-link").forEach(link => {
 
-                behavior: "smooth"
+            link.addEventListener("click", () => {
+
+                navMenu.classList.remove("mobile-open");
+
+                const icon =
+                    mobileButton.querySelector("i");
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
 
             });
 
+        });
+
+
+        /* =========================
+           ACTIVE NAVIGATION
+        ========================== */
+
+        const sections =
+            document.querySelectorAll("section[id]");
+
+        const navLinks =
+            document.querySelectorAll(".nav-link");
+
+        function updateActiveNav() {
+
+            let currentSection = "";
+
+            sections.forEach(section => {
+
+                const sectionTop =
+                    section.offsetTop - 180;
+
+                if (window.scrollY >= sectionTop) {
+                    currentSection = section.getAttribute("id");
+                }
+
+            });
+
+            navLinks.forEach(link => {
+
+                link.classList.remove("active");
+
+                if (
+                    link.getAttribute("href") ===
+                    "#" + currentSection
+                ) {
+                    link.classList.add("active");
+                }
+
+            });
 
         }
-    );
 
-}
-
+        window.addEventListener("scroll", updateActiveNav);
 
 
-/* =========================================================
-   ACTIVE NAVIGATION
-========================================================= */
+        /* =========================
+           PROJECT FILTER
+        ========================== */
 
-const sections =
-    document.querySelectorAll(
-        "section[id]"
-    );
+        const filterButtons =
+            document.querySelectorAll(".filter-button");
 
+        const projectCards =
+            document.querySelectorAll(".project-card");
 
-const navigationLinks =
-    document.querySelectorAll(
-        ".nav-link"
-    );
+        filterButtons.forEach(button => {
 
+            button.addEventListener("click", () => {
 
-function updateActiveNavigation() {
-
-
-    let currentSection = "";
-
-
-    sections.forEach(
-        function (section) {
-
-
-            const sectionTop =
-                section.offsetTop - 180;
-
-
-            if (
-                window.scrollY >=
-                sectionTop
-            ) {
-
-                currentSection =
-                    section.getAttribute(
-                        "id"
-                    );
-
-            }
-
-
-        }
-    );
-
-
-    navigationLinks.forEach(
-        function (link) {
-
-
-            link.classList.remove(
-                "active"
-            );
-
-
-            if (
-                link.getAttribute(
-                    "href"
-                ) ===
-                "#" + currentSection
-            ) {
-
-                link.classList.add(
-                    "active"
+                filterButtons.forEach(btn =>
+                    btn.classList.remove("active")
                 );
 
+                button.classList.add("active");
+
+                const filter =
+                    button.getAttribute("data-filter");
+
+                projectCards.forEach(card => {
+
+                    const category =
+                        card.getAttribute("data-category");
+
+                    if (
+                        filter === "all" ||
+                        category.includes(filter)
+                    ) {
+
+                        card.style.display = "block";
+
+                        setTimeout(() => {
+                            card.classList.add("show");
+                        }, 20);
+
+                    } else {
+
+                        card.classList.remove("show");
+                        card.style.display = "none";
+
+                    }
+
+                });
+
+            });
+
+        });
+
+
+        /* =========================
+           SCROLL REVEAL
+        ========================== */
+
+        const revealElements =
+            document.querySelectorAll(
+                ".info-card, .skill-panel, .timeline-item, .project-card, .education-panel, .contact-panel, .connect-panel"
+            );
+
+        const revealObserver =
+            new IntersectionObserver(
+                entries => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("reveal-visible");
+
+                            revealObserver.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+        revealElements.forEach(element => {
+
+            element.classList.add("reveal");
+
+            revealObserver.observe(element);
+
+        });
+
+
+        /* =========================
+           BACK TO TOP
+        ========================== */
+
+        const backToTop =
+            document.querySelector(".back-to-top");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 500) {
+                backToTop.classList.add("visible");
+            } else {
+                backToTop.classList.remove("visible");
             }
 
-
-        }
-    );
+        });
 
 
-}
+        /* =========================
+           CURRENT YEAR
+        ========================== */
 
+        document.getElementById("current-year")
+            .textContent = new Date().getFullYear();
 
-window.addEventListener(
-    "scroll",
-    updateActiveNavigation
-);
-
-
-updateActiveNavigation();
-
-
-</script>
-
+    </script>
 
 </body>
-
 </html>
