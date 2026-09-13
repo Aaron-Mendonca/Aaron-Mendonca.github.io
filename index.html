@@ -1,1773 +1,967 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* =========================================================
+   FINAL HOME PAGE
+   Aaron Mendonca
+========================================================= */
 
-    <title>Aaron Mendonca | Data Analyst & Data Scientist</title>
 
-    <meta
-        name="description"
-        content="Aaron Mendonca - Data Analyst and Data Science student specializing in Python, SQL, Power BI, Machine Learning and Data Visualization."
-    >
+/* =========================================================
+   HERO
+========================================================= */
 
-    <link rel="stylesheet" href="style.css">
-</head>
+#home.hero {
 
-<body>
+    position: relative;
 
-<!-- =========================================================
-     TOP PROGRESS BAR
-========================================================= -->
+    width: 100%;
 
-<div class="scroll-progress" id="scrollProgress"></div>
+    max-width: none;
 
+    min-height: calc(100vh - 88px);
 
-<!-- =========================================================
-     NAVBAR
-========================================================= -->
+    margin: 0;
 
-<header class="navbar">
+    padding: 28px 30px 55px;
 
-    <div class="nav-container">
+    display: flex;
 
-        <a href="#home" class="brand">
-            <span class="brand-box">A</span>
-            <span class="brand-name">Aaron Mendonca</span>
-        </a>
+    align-items: center;
 
-        <nav class="nav-links">
+    justify-content: center;
 
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#contact" class="nav-link">Contact</a>
+    overflow: hidden;
 
-        </nav>
+    background:
+        radial-gradient(
+            circle at 50% 42%,
+            rgba(24, 58, 125, 0.10),
+            transparent 42%
+        );
 
-        <a href="assets/resume.pdf" class="resume-btn" target="_blank">
-            <span>↓</span>
-            Resume
-        </a>
+}
 
-        <button class="mobile-menu" id="mobileMenu">
-            ☰
-        </button>
 
-    </div>
+/* Remove old hero pseudo elements */
 
-</header>
+#home.hero::before,
+#home.hero::after {
 
+    content: none;
 
-<!-- =========================================================
-     HOME / HERO
-========================================================= -->
+}
 
-<section class="hero section" id="home">
 
-    <!-- Decorative background shapes -->
+/* =========================================================
+   HOME CONTENT
+========================================================= */
 
-    <div class="hero-shape shape-one"></div>
-    <div class="hero-shape shape-two"></div>
-    <div class="hero-shape shape-three"></div>
+#home .home-content {
 
+    position: relative;
 
-    <div class="home-content">
+    z-index: 5;
 
-        <!-- Availability -->
+    width: 100%;
 
-        <div class="availability">
-            <span class="availability-star">✦</span>
-            Available for opportunities
-        </div>
+    max-width: 1200px;
 
+    margin: 0 auto;
 
-        <!-- Main heading -->
+    display: flex;
 
-        <h1 class="home-title">
-            Hi, I'm <span>Aaron</span>
-        </h1>
+    flex-direction: column;
 
+    align-items: center;
 
-        <!-- Role -->
+    text-align: center;
 
-        <div class="home-role">
+}
 
-            <span id="typingText">ML Specialist</span>
 
-            <span class="typing-cursor">|</span>
+/* =========================================================
+   AVAILABILITY
+========================================================= */
 
-        </div>
+#home .availability {
 
+    display: inline-flex;
 
-        <!-- Description -->
+    align-items: center;
 
-        <div class="home-description">
+    justify-content: center;
 
-            I enjoy solving problems with data, building models,
-            and turning insights into impact.
+    gap: 9px;
 
-        </div>
+    width: auto;
 
+    min-height: 40px;
 
-        <!-- Buttons -->
+    padding: 8px 18px;
 
-        <div class="home-buttons">
+    margin: 0 0 31px 0;
 
-            <a href="#projects" class="home-btn home-btn-primary">
+    border:
+        1px solid
+        rgba(78, 106, 150, 0.40);
 
-                <span class="btn-icon">⌘</span>
+    border-radius: 30px;
 
-                <span>View My Work</span>
+    background:
+        rgba(20, 27, 40, 0.88);
 
-                <span class="btn-arrow">→</span>
+    color: #5ca7ff;
 
-            </a>
+    font-size: 14px;
 
+    font-weight: 700;
 
-            <a href="#contact" class="home-btn home-btn-outline">
+    line-height: 1;
 
-                <span class="btn-icon">✉</span>
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.10);
 
-                <span>Get in Touch</span>
+}
 
-            </a>
 
-        </div>
+#home .availability-star {
 
+    display: inline-block;
 
-        <!-- Quick skills -->
+    color: #5da8ff;
 
-        <div class="quick-skills">
+    font-size: 17px;
 
+    line-height: 1;
 
-            <!-- Python -->
+}
 
-            <div class="quick-skill-card">
 
-                <div class="quick-skill-icon python-icon">
-                    🐍
-                </div>
+/* =========================================================
+   MAIN TITLE
+========================================================= */
 
-                <h3>Python</h3>
+#home .home-title {
 
-                <p>Data Analysis</p>
+    display: block;
 
-            </div>
+    width: 100%;
 
+    margin: 0;
 
-            <!-- SQL -->
+    padding: 0;
 
-            <div class="quick-skill-card">
+    color: #f1f5ff;
 
-                <div class="quick-skill-icon sql-icon">
-                    🗃️
-                </div>
+    font-size:
+        clamp(70px, 6.3vw, 100px);
 
-                <h3>SQL</h3>
+    font-weight: 850;
 
-                <p>Database</p>
+    line-height: 1.03;
 
-            </div>
+    letter-spacing: -4px;
 
+}
 
-            <!-- ML -->
 
-            <div class="quick-skill-card">
+#home .home-title span {
 
-                <div class="quick-skill-icon ml-icon">
-                    🤖
-                </div>
+    background:
+        linear-gradient(
+            100deg,
+            #eef4ff 0%,
+            #c7dcff 50%,
+            #9fc7ff 100%
+        );
 
-                <h3>ML</h3>
+    -webkit-background-clip: text;
 
-                <p>Algorithms</p>
+    background-clip: text;
 
-            </div>
+    color: transparent;
 
+}
 
-            <!-- Power BI -->
 
-            <div class="quick-skill-card">
+/* =========================================================
+   ROLE
+========================================================= */
 
-                <div class="quick-skill-icon powerbi-icon">
-                    📊
-                </div>
+#home .home-role {
 
-                <h3>PowerBI</h3>
+    display: block;
 
-                <p>Visualization</p>
+    width: 100%;
 
-            </div>
+    min-height: 59px;
 
+    margin: 27px 0 25px;
 
-        </div>
+    padding: 0;
 
-    </div>
+    color: #2fd1e5;
 
-</section>
+    font-size:
+        clamp(34px, 3vw, 48px);
 
+    font-weight: 500;
 
-<!-- =========================================================
-     ABOUT
-========================================================= -->
+    line-height: 1.25;
 
-<section class="section about-section" id="about">
+}
 
-    <div class="section-heading">
 
-        <div class="section-label">
-            ABOUT ME
-        </div>
+#home #typingText {
 
-        <h2>About Me</h2>
+    background:
+        linear-gradient(
+            90deg,
+            #58a2ff 0%,
+            #22d3e5 100%
+        );
 
-        <div class="heading-line"></div>
+    -webkit-background-clip: text;
 
-        <p>
-            Turning data into insights and insights into meaningful decisions.
-        </p>
+    background-clip: text;
 
-    </div>
+    color: transparent;
 
+}
 
-    <div class="about-grid">
 
-        <div class="about-text">
+#home .typing-cursor {
 
-            <h3>Introduction</h3>
+    color: #4f9eff;
 
-            <p>
-                I'm a passionate Data Analyst with hands-on experience in
-                data analysis, machine learning, MIS reporting, and business
-                intelligence.
-            </p>
+    font-weight: 400;
 
-            <p>
-                I am currently pursuing my BSc Data Science at the
-                <strong>University of Mumbai</strong> with a
-                <strong>9.5 CGPA</strong>.
-            </p>
+    margin-left: 1px;
 
-            <h3>What I Do</h3>
+    animation:
+        homeCursorBlink 0.85s steps(1) infinite;
 
-            <p>
-                I work with SQL for data extraction, Python for analysis
-                and automation, and Power BI for dashboards and business
-                intelligence.
-            </p>
+}
 
-            <p>
-                I enjoy discovering patterns in data, building analytical
-                solutions, and turning data into actionable business insights.
-            </p>
 
-            <h3>Outside Work</h3>
+@keyframes homeCursorBlink {
 
-            <p>
-                When I'm not working with data, I enjoy learning about
-                emerging technologies, exploring visualization techniques,
-                and continuously improving my analytical skills.
-            </p>
-
-        </div>
-
-
-        <div class="about-cards">
-
-            <div class="info-card">
-
-                <div class="card-icon">▣</div>
-
-                <div>
-                    <h4>Data Extraction & Analysis</h4>
-                    <p>
-                        Expert in SQL for complex data extraction and Python
-                        for advanced statistical analysis.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="info-card">
-
-                <div class="card-icon">↗</div>
-
-                <div>
-                    <h4>Predictive Modeling</h4>
-                    <p>
-                        Building machine learning models using preprocessing,
-                        feature engineering and ensemble methods.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="info-card">
-
-                <div class="card-icon">⌘</div>
-
-                <div>
-                    <h4>Data Visualization</h4>
-                    <p>
-                        Creating impactful dashboards and visualizations
-                        using Power BI, Matplotlib and Seaborn.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="info-card">
-
-                <div class="card-icon">▱</div>
-
-                <div>
-                    <h4>Continuous Learning</h4>
-                    <p>
-                        Always exploring emerging technologies and advanced
-                        data science techniques.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     SKILLS
-========================================================= -->
-
-<section class="section skills-section" id="skills">
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            TECHNICAL EXPERTISE
-        </div>
-
-        <h2>Skills & Tech Stack</h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            A comprehensive toolkit for data analysis, machine learning,
-            and turning raw data into actionable insights.
-        </p>
-
-    </div>
-
-
-    <div class="skills-top-grid">
-
-        <!-- PROFICIENCY -->
-
-        <div class="large-card">
-
-            <h3>📊 Skill Proficiency</h3>
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-                    <span>Python</span>
-                    <strong>90%</strong>
-                </div>
-
-                <div class="skill-bar">
-                    <span style="width:90%;"></span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-                    <span>SQL</span>
-                    <strong>85%</strong>
-                </div>
-
-                <div class="skill-bar">
-                    <span style="width:85%;"></span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-                    <span>Machine Learning</span>
-                    <strong>80%</strong>
-                </div>
-
-                <div class="skill-bar">
-                    <span style="width:80%;"></span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-                    <span>Data Visualization</span>
-                    <strong>88%</strong>
-                </div>
-
-                <div class="skill-bar">
-                    <span style="width:88%;"></span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-                    <span>Statistical Analysis</span>
-                    <strong>82%</strong>
-                </div>
-
-                <div class="skill-bar">
-                    <span style="width:82%;"></span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-item">
-
-                <div class="skill-name">
-                    <span>Power BI</span>
-                    <strong>85%</strong>
-                </div>
-
-                <div class="skill-bar">
-                    <span style="width:85%;"></span>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- ACHIEVEMENTS -->
-
-        <div class="large-card">
-
-            <h3>🎯 Achievement Stats</h3>
-
-            <div class="achievement blue-achievement">
-
-                <strong>85%</strong>
-
-                <span>ML Model Accuracy</span>
-
-            </div>
-
-
-            <div class="achievement green-achievement">
-
-                <strong>5+</strong>
-
-                <span>Data Projects</span>
-
-            </div>
-
-
-            <div class="achievement purple-achievement">
-
-                <strong>2+</strong>
-
-                <span>Years Learning</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- SKILL CATEGORIES -->
-
-    <div class="category-grid">
-
-        <div class="category-card">
-
-            <h3>💻 Programming Languages</h3>
-
-            <div class="tags blue-tags">
-                <span>Python</span>
-                <span>SQL</span>
-                <span>R</span>
-            </div>
-
-        </div>
-
-
-        <div class="category-card">
-
-            <h3>📚 Libraries & Frameworks</h3>
-
-            <div class="tags green-tags">
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Scikit-learn</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-            </div>
-
-        </div>
-
-
-        <div class="category-card">
-
-            <h3>🔄 Data Handling</h3>
-
-            <div class="tags purple-tags">
-                <span>Data Cleaning</span>
-                <span>Preprocessing</span>
-                <span>Feature Engineering</span>
-                <span>EDA</span>
-            </div>
-
-        </div>
-
-
-        <div class="category-card">
-
-            <h3>🛠 Tools & Platforms</h3>
-
-            <div class="tags orange-tags">
-                <span>Power BI</span>
-                <span>Tableau</span>
-                <span>Excel</span>
-                <span>Google Sheets</span>
-                <span>Zoho CRM</span>
-                <span>Jupyter Notebook</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     EXPERIENCE
-========================================================= -->
-
-<section class="section experience-section" id="experience">
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            PROFESSIONAL JOURNEY
-        </div>
-
-        <h2>Experience</h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            Experience across data science, AI, CRM analytics and business
-            reporting.
-        </p>
-
-    </div>
-
-
-    <div class="timeline">
-
-
-        <!-- TELLME -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="experience-card featured-experience">
-
-                <div class="experience-top">
-
-                    <div>
-                        <h3>CRM Coordinator & Data Expert</h3>
-
-                        <h4>TellMe – HeartTales Wholeness Pvt. Ltd.</h4>
-                    </div>
-
-                    <span class="date">
-                        Apr 2026 – Present
-                    </span>
-
-                </div>
-
-
-                <p>
-                    Conducting data mining and analysis on real user and
-                    session data to identify behavioural patterns and
-                    engagement trends.
-                </p>
-
-                <p>
-                    Deriving actionable insights to improve user experience,
-                    operational efficiency and business decision-making.
-                </p>
-
-                <p>
-                    Maintaining live session tracking and MIS reporting
-                    using Google Sheets and Excel.
-                </p>
-
-
-                <div class="experience-tags">
-                    <span>Data Mining</span>
-                    <span>CRM</span>
-                    <span>Google Sheets</span>
-                    <span>Excel</span>
-                    <span>MIS Reporting</span>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- IBM -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="experience-card">
-
-                <div class="experience-top">
-
-                    <div>
-                        <h3>Artificial Intelligence Intern</h3>
-
-                        <h4>IBM – Virtual</h4>
-                    </div>
-
-                    <span class="date">
-                        Feb 2026 – Mar 2026
-                    </span>
-
-                </div>
-
-
-                <p>
-                    Worked on AI and machine learning workflows including
-                    data handling, model building, testing and performance
-                    evaluation.
-                </p>
-
-                <p>
-                    Strengthened analytical and problem-solving capabilities
-                    through hands-on model building and data analysis.
-                </p>
-
-
-                <div class="experience-tags">
-                    <span>Artificial Intelligence</span>
-                    <span>Machine Learning</span>
-                    <span>Python</span>
-                    <span>Data Analysis</span>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- EDEPT -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="experience-card">
-
-                <div class="experience-top">
-
-                    <div>
-                        <h3>Campus Community Head – Intern</h3>
-
-                        <h4>edept, Mumbai</h4>
-                    </div>
-
-                    <span class="date">
-                        Oct 2025 – Apr 2026
-                    </span>
-
-                </div>
-
-
-                <p>
-                    Tracked and analysed lead engagement data while maintaining
-                    centralized records and generating MIS reports.
-                </p>
-
-                <p>
-                    Identified performance gaps through data observation and
-                    drove corrective action across cross-functional teams.
-                </p>
-
-
-                <div class="experience-tags">
-                    <span>Lead Analytics</span>
-                    <span>MIS Reporting</span>
-                    <span>Data Tracking</span>
-                    <span>Business Analysis</span>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- UNIFIED MENTOR -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="experience-card">
-
-                <div class="experience-top">
-
-                    <div>
-                        <h3>Data Science Intern</h3>
-
-                        <h4>Unified Mentor Pvt. Ltd.</h4>
-                    </div>
-
-                    <span class="date">
-                        Apr 2025 – Jul 2025
-                    </span>
-
-                </div>
-
-
-                <p>
-                    Performed data cleaning, preprocessing and exploratory
-                    data analysis on structured datasets.
-                </p>
-
-                <p>
-                    Built and evaluated machine learning models using Python
-                    and generated data-driven reports.
-                </p>
-
-
-                <div class="experience-tags">
-                    <span>Python</span>
-                    <span>Pandas</span>
-                    <span>Scikit-learn</span>
-                    <span>EDA</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     PROJECTS
-========================================================= -->
-
-<section class="section projects-section" id="projects">
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            PORTFOLIO SHOWCASE
-        </div>
-
-        <h2>Featured Projects</h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            A showcase of data science, machine learning and analytical
-            projects demonstrating my ability to turn data into insights.
-        </p>
-
-    </div>
-
-
-    <!-- FILTERS -->
-
-    <div class="project-filters">
-
-        <button class="filter-btn active" data-filter="all">
-            All
-        </button>
-
-        <button class="filter-btn" data-filter="ml">
-            Machine Learning
-        </button>
-
-        <button class="filter-btn" data-filter="analysis">
-            Data Analysis
-        </button>
-
-    </div>
-
-
-    <div class="projects-grid">
-
-
-        <!-- PROJECT 1 -->
-
-        <article class="project-card" data-category="ml">
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Machine Learning
-                </span>
-
-                <span>◉</span>
-
-            </div>
-
-            <h3>Customer Satisfaction Prediction</h3>
-
-            <p>
-                Built classification models with feature engineering
-                to predict customer satisfaction and derive business
-                insights.
-            </p>
-
-            <div class="project-tags">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Scikit-learn</span>
-            </div>
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-
-        <!-- PROJECT 2 -->
-
-        <article class="project-card" data-category="analysis">
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Data Analysis
-                </span>
-
-                <span>◉</span>
-
-            </div>
-
-            <h3>Netflix Data Analysis</h3>
-
-            <p>
-                Conducted exploratory data analysis and created
-                visualizations to uncover content trends and viewer
-                preferences.
-            </p>
-
-            <div class="project-tags">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>Matplotlib</span>
-                <span>Seaborn</span>
-            </div>
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-
-        <!-- PROJECT 3 -->
-
-        <article class="project-card" data-category="analysis">
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Data Analysis
-                </span>
-
-                <span>◉</span>
-
-            </div>
-
-            <h3>Digital Payment Trends</h3>
-
-            <p>
-                Analysed large-scale datasets to identify digital payment
-                conversion trends across semi-urban and rural markets.
-            </p>
-
-            <div class="project-tags">
-                <span>Python</span>
-                <span>Excel</span>
-                <span>SQL</span>
-            </div>
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-
-        <!-- PROJECT 4 -->
-
-        <article class="project-card" data-category="ml">
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Machine Learning
-                </span>
-
-                <span>◉</span>
-
-            </div>
-
-            <h3>Air Quality Prediction</h3>
-
-            <p>
-                Built regression models with preprocessing and feature
-                selection techniques for air quality prediction.
-            </p>
-
-            <div class="project-tags">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>NumPy</span>
-                <span>Scikit-learn</span>
-            </div>
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-
-        <!-- PROJECT 5 -->
-
-        <article class="project-card" data-category="analysis">
-
-            <div class="project-top">
-
-                <span class="project-type">
-                    &lt;/&gt; Data Analysis
-                </span>
-
-                <span>◉</span>
-
-            </div>
-
-            <h3>Tobacco Use & Mortality</h3>
-
-            <p>
-                Conducted analytical research on tobacco use trends and
-                their relationship with mortality rates over time.
-            </p>
-
-            <div class="project-tags">
-                <span>Python</span>
-                <span>EDA</span>
-                <span>Statistics</span>
-                <span>Visualization</span>
-            </div>
-
-            <a
-                href="https://github.com/Aaron-Mendonca"
-                target="_blank"
-                class="project-btn"
-            >
-                ◉ &nbsp; View Code →
-            </a>
-
-        </article>
-
-    </div>
-
-
-    <!-- GITHUB CTA -->
-
-    <div class="github-cta">
-
-        <div class="github-icon">
-            ◉
-        </div>
-
-        <h3>Explore More Projects</h3>
-
-        <p>
-            Check out my GitHub for more data science projects,
-            code samples and analytical work.
-        </p>
-
-        <a
-            href="https://github.com/Aaron-Mendonca"
-            target="_blank"
-            class="btn btn-primary"
-        >
-            ◉ &nbsp; Visit GitHub Profile
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     CERTIFICATIONS
-========================================================= -->
-
-<section class="section certifications-section" id="certifications">
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            ACHIEVEMENTS
-        </div>
-
-        <h2>Certifications & Education</h2>
-
-        <div class="heading-line"></div>
-
-    </div>
-
-
-    <div class="cert-grid">
-
-        <div class="cert-card">
-
-            <span class="cert-icon">🏆</span>
-
-            <div>
-                <h3>BSc Data Science</h3>
-                <p>University of Mumbai</p>
-                <span>CGPA: 9.5 • 2027</span>
-            </div>
-
-        </div>
-
-
-        <div class="cert-card">
-
-            <span class="cert-icon">📊</span>
-
-            <div>
-                <h3>British Airways Data Science</h3>
-                <p>Forage Job Simulation</p>
-                <span>January 2026</span>
-            </div>
-
-        </div>
-
-
-        <div class="cert-card">
-
-            <span class="cert-icon">📈</span>
-
-            <div>
-                <h3>Advanced Excel</h3>
-                <p>ExcelR</p>
-                <span>August 2024</span>
-            </div>
-
-        </div>
-
-
-        <div class="cert-card">
-
-            <span class="cert-icon">🐍</span>
-
-            <div>
-                <h3>The Joy of Computing Using Python</h3>
-                <p>NPTEL</p>
-                <span>November 2024</span>
-            </div>
-
-        </div>
-
-
-        <div class="cert-card">
-
-            <span class="cert-icon">🥇</span>
-
-            <div>
-                <h3>Topper Award – 1st Place</h3>
-                <p>Certificate of Academic Excellence</p>
-                <span>June 2025</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     CONTACT
-========================================================= -->
-
-<section class="section contact-section" id="contact">
-
-    <div class="section-heading">
-
-        <div class="section-label">
-            LET'S CONNECT
-        </div>
-
-        <h2>Get In Touch</h2>
-
-        <div class="heading-line"></div>
-
-        <p>
-            I am eager to connect with like-minded professionals and explore
-            opportunities to further develop my skills and contribute to
-            innovative projects.
-        </p>
-
-    </div>
-
-
-    <div class="contact-grid">
-
-
-        <!-- CONTACT FORM -->
-
-        <div class="contact-card">
-
-            <h3>✈ Send a Message</h3>
-
-            <form id="contactForm">
-
-                <div class="form-row">
-
-                    <div class="form-group">
-
-                        <label>Name</label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="Your name"
-                            required
-                        >
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label>Email</label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="your.email@example.com"
-                            required
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>Subject</label>
-
-                    <input
-                        type="text"
-                        id="subject"
-                        placeholder="What's this about?"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>Message</label>
-
-                    <textarea
-                        id="message"
-                        rows="6"
-                        placeholder="Tell me about your project or opportunity..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit" class="btn btn-primary send-btn">
-                    ✈ &nbsp; Send Message
-                </button>
-
-            </form>
-
-        </div>
-
-
-        <!-- CONTACT INFORMATION -->
-
-        <div>
-
-            <div class="contact-card">
-
-                <h3>⌖ Contact Information</h3>
-
-
-                <a
-                    href="mailto:mendoncaaaron27@gmail.com"
-                    class="contact-item"
-                >
-
-                    <span class="contact-icon">✉</span>
-
-                    <div>
-                        <small>Email</small>
-                        <strong>
-                            mendoncaaaron27@gmail.com
-                        </strong>
-                    </div>
-
-                </a>
-
-
-                <a
-                    href="https://www.linkedin.com/in/aaronmendonca/"
-                    target="_blank"
-                    class="contact-item"
-                >
-
-                    <span class="contact-icon">in</span>
-
-                    <div>
-                        <small>LinkedIn</small>
-                        <strong>
-                            aaronmendonca
-                        </strong>
-                    </div>
-
-                </a>
-
-
-                <a
-                    href="https://github.com/Aaron-Mendonca"
-                    target="_blank"
-                    class="contact-item"
-                >
-
-                    <span class="contact-icon">◉</span>
-
-                    <div>
-                        <small>GitHub</small>
-                        <strong>
-                            Aaron-Mendonca
-                        </strong>
-                    </div>
-
-                </a>
-
-
-                <a
-                    href="tel:+918976351440"
-                    class="contact-item"
-                >
-
-                    <span class="contact-icon phone">☎</span>
-
-                    <div>
-                        <small>Phone</small>
-                        <strong>
-                            +91 8976351440
-                        </strong>
-                    </div>
-
-                </a>
-
-            </div>
-
-
-            <div class="connect-card">
-
-                <h3>Let's Connect</h3>
-
-                <p>
-                    Feel free to reach out through any of these platforms.
-                    I'm always open to discussing data science, analytics,
-                    machine learning and potential collaborations.
-                </p>
-
-                <div class="connect-buttons">
-
-                    <a
-                        href="https://www.linkedin.com/in/aaronmendonca/"
-                        target="_blank"
-                        class="small-btn"
-                    >
-                        in &nbsp; LinkedIn
-                    </a>
-
-                    <a
-                        href="https://github.com/Aaron-Mendonca"
-                        target="_blank"
-                        class="small-btn"
-                    >
-                        ◉ &nbsp; GitHub
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer class="footer">
-
-    <div class="footer-grid">
-
-        <div>
-
-            <h3>Aaron Mendonca</h3>
-
-            <p>
-                Aspiring Data Analyst & Data Science professional passionate
-                about turning data into actionable insights.
-            </p>
-
-            <div class="footer-socials">
-
-                <a
-                    href="https://github.com/Aaron-Mendonca"
-                    target="_blank"
-                >
-                    ◉
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/aaronmendonca/"
-                    target="_blank"
-                >
-                    in
-                </a>
-
-                <a href="mailto:mendoncaaaron27@gmail.com">
-                    ✉
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div>
-
-            <h4>Quick Links</h4>
-
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-
-        </div>
-
-
-        <div>
-
-            <h4>Get in Touch</h4>
-
-            <p>
-                Email:
-                <a href="mailto:mendoncaaaron27@gmail.com">
-                    mendoncaaaron27@gmail.com
-                </a>
-            </p>
-
-            <p>
-                Phone:
-                <a href="tel:+918976351440">
-                    +91 8976351440
-                </a>
-            </p>
-
-            <p>
-                Status:
-                <span class="status">
-                    ● Available for opportunities
-                </span>
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <span>
-            © 2026 Aaron Mendonca. All rights reserved.
-        </span>
-
-        <span>
-            Built with ♥ from Aaron Mendonca
-        </span>
-
-    </div>
-
-</footer>
-
-
-<!-- BACK TO TOP -->
-
-<button class="back-to-top" id="backToTop">
-    ↑
-</button>
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
-<script>
-
-    /* ==========================================
-       MOBILE MENU
-    ========================================== */
-
-    const mobileMenu = document.getElementById("mobileMenu");
-    const navLinks = document.querySelector(".nav-links");
-
-    mobileMenu.addEventListener("click", () => {
-        navLinks.classList.toggle("mobile-open");
-    });
-
-
-    document.querySelectorAll(".nav-link").forEach(link => {
-
-        link.addEventListener("click", () => {
-            navLinks.classList.remove("mobile-open");
-        });
-
-    });
-
-
-    /* ==========================================
-       TYPING EFFECT
-    ========================================== */
-
-    const typingText = document.getElementById("typingText");
-
-    const roles = [
-        "Data Analyst",
-        "Data Scientist",
-        "Business Analyst",
-        "BI Enthusiast"
-    ];
-
-    let roleIndex = 0;
-    let characterIndex = 0;
-    let deleting = false;
-
-
-    function typeEffect() {
-
-        const currentRole = roles[roleIndex];
-
-        if (!deleting) {
-
-            typingText.textContent =
-                currentRole.substring(0, characterIndex + 1);
-
-            characterIndex++;
-
-            if (characterIndex === currentRole.length) {
-
-                deleting = true;
-
-                setTimeout(typeEffect, 1500);
-
-                return;
-            }
-
-        } else {
-
-            typingText.textContent =
-                currentRole.substring(0, characterIndex - 1);
-
-            characterIndex--;
-
-            if (characterIndex === 0) {
-
-                deleting = false;
-
-                roleIndex++;
-
-                if (roleIndex >= roles.length) {
-                    roleIndex = 0;
-                }
-
-            }
-
-        }
-
-        setTimeout(typeEffect, deleting ? 60 : 100);
+    0%,
+    48% {
+        opacity: 1;
     }
 
-    typeEffect();
+    49%,
+    100% {
+        opacity: 0;
+    }
 
+}
 
-    /* ==========================================
-       PROJECT FILTER
-    ========================================== */
 
-    const filterButtons =
-        document.querySelectorAll(".filter-btn");
+/* =========================================================
+   DESCRIPTION CARD
+========================================================= */
 
-    const projectCards =
-        document.querySelectorAll(".project-card");
+#home .home-description {
 
+    width: min(100%, 1030px);
 
-    filterButtons.forEach(button => {
+    min-height: 82px;
 
-        button.addEventListener("click", () => {
+    margin: 0;
 
-            filterButtons.forEach(btn => {
-                btn.classList.remove("active");
-            });
+    padding: 20px 28px;
 
-            button.classList.add("active");
+    display: flex;
 
-            const filter = button.dataset.filter;
+    align-items: center;
 
-            projectCards.forEach(card => {
+    justify-content: center;
 
-                if (
-                    filter === "all" ||
-                    card.dataset.category === filter
-                ) {
+    text-align: center;
 
-                    card.style.display = "block";
+    border:
+        1px solid
+        rgba(80, 99, 132, 0.42);
 
-                    setTimeout(() => {
-                        card.classList.add("show");
-                    }, 20);
+    border-radius: 15px;
 
-                } else {
+    background:
+        rgba(27, 32, 44, 0.86);
 
-                    card.classList.remove("show");
-                    card.style.display = "none";
+    color: #d1d7e1;
 
-                }
+    font-size:
+        clamp(17px, 1.45vw, 22px);
 
-            });
+    font-weight: 450;
 
-        });
+    line-height: 1.5;
 
-    });
+    box-shadow:
+        inset 0 1px 0
+        rgba(255,255,255,0.025),
 
+        0 15px 45px
+        rgba(0, 0, 0, 0.10);
 
-    /* ==========================================
-       CONTACT FORM
-    ========================================== */
+}
 
-    const contactForm =
-        document.getElementById("contactForm");
 
+/* =========================================================
+   BUTTON AREA
+========================================================= */
 
-    contactForm.addEventListener("submit", function(event) {
+#home .home-buttons {
 
-        event.preventDefault();
+    display: flex;
 
-        const name =
-            document.getElementById("name").value;
+    align-items: center;
 
-        const email =
-            document.getElementById("email").value;
+    justify-content: center;
 
-        const subject =
-            document.getElementById("subject").value;
+    gap: 24px;
 
-        const message =
-            document.getElementById("message").value;
+    width: 100%;
 
+    margin: 46px 0 0;
 
-        const mailSubject =
-            encodeURIComponent(subject);
+}
 
-        const mailBody =
-            encodeURIComponent(
-                "Name: " + name +
-                "\nEmail: " + email +
-                "\n\nMessage:\n" + message
-            );
 
+/* =========================================================
+   BUTTONS
+========================================================= */
 
-        window.location.href =
-            "mailto:mendoncaaaron27@gmail.com" +
-            "?subject=" + mailSubject +
-            "&body=" + mailBody;
+#home .home-btn {
 
-    });
+    height: 48px;
 
+    min-width: 270px;
 
-    /* ==========================================
-       SCROLL PROGRESS
-    ========================================== */
+    padding: 0 20px;
 
-    window.addEventListener("scroll", () => {
+    display: inline-flex;
 
-        const scrollTop =
-            window.scrollY;
+    align-items: center;
 
-        const documentHeight =
-            document.documentElement.scrollHeight -
-            document.documentElement.clientHeight;
+    justify-content: center;
 
-        const progress =
-            (scrollTop / documentHeight) * 100;
+    gap: 12px;
 
-        document.getElementById(
-            "scrollProgress"
-        ).style.width = progress + "%";
+    border-radius: 10px;
 
-    });
+    font-size: 16px;
 
+    font-weight: 750;
 
-    /* ==========================================
-       BACK TO TOP
-    ========================================== */
+    line-height: 1;
 
-    const backToTop =
-        document.getElementById("backToTop");
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
 
+}
 
-    window.addEventListener("scroll", () => {
 
-        if (window.scrollY > 500) {
+#home .home-btn-primary {
 
-            backToTop.classList.add("visible");
+    color: #ffffff;
 
-        } else {
+    background:
+        linear-gradient(
+            135deg,
+            #2869e8,
+            #2459d7
+        );
 
-            backToTop.classList.remove("visible");
+    border:
+        1px solid
+        rgba(77, 137, 239, 0.55);
 
-        }
+    box-shadow:
+        0 10px 25px
+        rgba(35, 100, 230, 0.20);
 
-    });
+}
 
 
-    backToTop.addEventListener("click", () => {
+#home .home-btn-primary:hover {
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+    transform:
+        translateY(-3px);
 
-    });
+    box-shadow:
+        0 15px 35px
+        rgba(35, 100, 230, 0.35);
 
+}
 
-    /* ==========================================
-       ACTIVE NAVIGATION
-    ========================================== */
 
-    const sections =
-        document.querySelectorAll("section[id]");
+#home .home-btn-outline {
 
-    window.addEventListener("scroll", () => {
+    color: #59a5ff;
 
-        let current = "";
+    background:
+        rgba(24, 31, 44, 0.78);
 
-        sections.forEach(section => {
+    border:
+        2px solid
+        #3d6d9f;
 
-            const sectionTop =
-                section.offsetTop - 150;
+}
 
-            if (window.scrollY >= sectionTop) {
 
-                current =
-                    section.getAttribute("id");
+#home .home-btn-outline:hover {
 
-            }
+    transform:
+        translateY(-3px);
 
-        });
+    color: #70b2ff;
 
+    border-color:
+        #5799dc;
 
-        document.querySelectorAll(".nav-link")
-            .forEach(link => {
+    background:
+        rgba(36, 54, 80, 0.45);
 
-                link.classList.remove("active");
+}
 
-                if (
-                    link.getAttribute("href") ===
-                    "#" + current
-                ) {
 
-                    link.classList.add("active");
+#home .btn-icon {
 
-                }
+    display: inline-flex;
 
-            });
+    align-items: center;
 
-    });
+    justify-content: center;
 
-</script>
+    font-size: 16px;
 
-</body>
-</html>
+    line-height: 1;
+
+}
+
+
+#home .btn-arrow {
+
+    margin-left: 2px;
+
+    font-size: 21px;
+
+    line-height: 1;
+
+}
+
+
+/* =========================================================
+   QUICK SKILLS
+========================================================= */
+
+#home .quick-skills {
+
+    width: auto;
+
+    margin: 63px auto 0;
+
+    padding: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 175px);
+
+    gap: 24px;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================================
+   QUICK SKILL CARD
+========================================================= */
+
+#home .quick-skill-card {
+
+    width: 175px;
+
+    height: 147px;
+
+    margin: 0;
+
+    padding: 16px 12px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border:
+        1px solid
+        rgba(82, 103, 138, 0.37);
+
+    border-radius: 14px;
+
+    background:
+        rgba(25, 31, 44, 0.90);
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(255,255,255,0.025),
+
+        0 15px 35px
+        rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+
+}
+
+
+#home .quick-skill-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(70, 133, 208, 0.70);
+
+    background:
+        rgba(29, 38, 55, 0.96);
+
+}
+
+
+/* =========================================================
+   QUICK SKILL ICON
+========================================================= */
+
+#home .quick-skill-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    margin: 0 0 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 29px;
+
+    line-height: 1;
+
+}
+
+
+#home .quick-skill-card h3 {
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #f0f3f8;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+}
+
+
+#home .quick-skill-card p {
+
+    margin: 4px 0 0;
+
+    padding: 0;
+
+    color: #9ba5b5;
+
+    font-size: 13px;
+
+    font-weight: 450;
+
+    line-height: 1.3;
+
+}
+
+
+/* =========================================================
+   ICON GLOW
+========================================================= */
+
+#home .python-icon {
+
+    filter:
+        drop-shadow(
+            0 0 7px
+            rgba(50, 190, 140, 0.30)
+        );
+
+}
+
+
+#home .sql-icon {
+
+    filter:
+        drop-shadow(
+            0 0 7px
+            rgba(255, 185, 80, 0.25)
+        );
+
+}
+
+
+#home .ml-icon {
+
+    filter:
+        drop-shadow(
+            0 0 8px
+            rgba(120, 110, 255, 0.30)
+        );
+
+}
+
+
+#home .powerbi-icon {
+
+    filter:
+        drop-shadow(
+            0 0 8px
+            rgba(255, 190, 55, 0.30)
+        );
+
+}
+
+
+/* =========================================================
+   DECORATIVE SHAPES
+========================================================= */
+
+#home .hero-shape {
+
+    position: absolute;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+}
+
+
+/* LEFT SQUARE */
+
+#home .hero-square {
+
+    width: 80px;
+
+    height: 80px;
+
+    left: 4.5%;
+
+    top: 5%;
+
+    border:
+        1px solid
+        rgba(65, 128, 200, 0.45);
+
+    transform:
+        rotate(20deg);
+
+    opacity: 0.8;
+
+    animation:
+        heroSquareFloat 7s ease-in-out infinite;
+
+}
+
+
+@keyframes heroSquareFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(20deg);
+    }
+
+    50% {
+        transform:
+            translateY(13px)
+            rotate(25deg);
+    }
+
+}
+
+
+/* RIGHT SQUARE */
+
+#home .hero-small-square {
+
+    width: 48px;
+
+    height: 48px;
+
+    right: 4.8%;
+
+    top: 51%;
+
+    background:
+        rgba(10, 111, 155, 0.22);
+
+    transform:
+        rotate(7deg);
+
+    opacity: 0.75;
+
+    animation:
+        heroSmallFloat 6s ease-in-out infinite;
+
+}
+
+
+@keyframes heroSmallFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(7deg);
+    }
+
+    50% {
+        transform:
+            translateY(-12px)
+            rotate(12deg);
+    }
+
+}
+
+
+/* RIGHT CIRCLE */
+
+#home .hero-circle {
+
+    width: 65px;
+
+    height: 65px;
+
+    right: 7.5%;
+
+    bottom: 8%;
+
+    border:
+        1px solid
+        rgba(22, 166, 204, 0.55);
+
+    border-radius: 50%;
+
+    opacity: 0.75;
+
+    animation:
+        heroCircleFloat 8s ease-in-out infinite;
+
+}
+
+
+@keyframes heroCircleFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-13px);
+    }
+
+}
+
+
+/* =========================================================
+   HOME RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    #home.hero {
+
+        min-height:
+            calc(100vh - 75px);
+
+        padding:
+            50px 25px 70px;
+
+    }
+
+
+    #home .home-title {
+
+        font-size:
+            clamp(60px, 10vw, 82px);
+
+    }
+
+
+    #home .quick-skills {
+
+        grid-template-columns:
+            repeat(2, 175px);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #home.hero {
+
+        min-height:
+            calc(100vh - 75px);
+
+        padding:
+            45px 18px 60px;
+
+    }
+
+
+    #home .availability {
+
+        font-size: 12px;
+
+        min-height: 37px;
+
+        padding:
+            7px 14px;
+
+    }
+
+
+    #home .home-title {
+
+        font-size: 52px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    #home .home-role {
+
+        margin-top: 23px;
+
+        margin-bottom: 22px;
+
+        font-size: 30px;
+
+    }
+
+
+    #home .home-description {
+
+        min-height: 100px;
+
+        padding:
+            18px;
+
+        font-size: 16px;
+
+    }
+
+
+    #home .home-buttons {
+
+        flex-direction: column;
+
+        gap: 14px;
+
+        margin-top: 30px;
+
+    }
+
+
+    #home .home-btn {
+
+        width: 100%;
+
+        max-width: 350px;
+
+        min-width: 0;
+
+    }
+
+
+    #home .quick-skills {
+
+        width: 100%;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 175px));
+
+        gap: 14px;
+
+        margin-top: 45px;
+
+    }
+
+
+    #home .quick-skill-card {
+
+        width: 100%;
+
+        height: 135px;
+
+    }
+
+
+    #home .hero-square {
+
+        width: 50px;
+
+        height: 50px;
+
+        left: 1%;
+
+    }
+
+
+    #home .hero-small-square {
+
+        width: 30px;
+
+        height: 30px;
+
+        right: 2%;
+
+    }
+
+
+    #home .hero-circle {
+
+        width: 45px;
+
+        height: 45px;
+
+        right: 3%;
+
+    }
+
+}
