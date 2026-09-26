@@ -2605,3 +2605,16 @@ section {
     }
 
 }
+
+/* FIX SECTION NAVIGATION SPACING */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 0 !important;
+}
+
+.section {
+    padding-top: 0 !important;
+}
