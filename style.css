@@ -2605,16 +2605,3 @@ section {
     }
 
 }
-
-/* NAVIGATION SECTION POSITIONING */
-section {
-    scroll-margin-top: 86px;
-}
-
-.section {
-    padding-top: 70px;
-}
-
-#home {
-    padding-top: 150px;
-}
