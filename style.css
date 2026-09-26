@@ -2606,16 +2606,15 @@ section {
 
 }
 
-/* SECTION NAVIGATION SPACING */
+/* NAVIGATION SECTION POSITIONING */
 section {
-    scroll-margin-top: 80px !important;
+    scroll-margin-top: 86px;
 }
 
 .section {
-    padding-top: 25px !important;
-}
+    padding-top: 70px;
 }
 
-.section {
-    padding-top: 0 !important;
+#home {
+    padding-top: 150px;
 }
